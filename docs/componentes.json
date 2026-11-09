@@ -1,93 +1,4803 @@
 {
   "documents": [
     {
-      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_ryzen_5600x",
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_001",
       "fields": {
-        "nombre": { "stringValue": "AMD Ryzen 5 5600X" },
-        "socket": { "stringValue": "AM4" },
-        "tdp_vatios": { "integerValue": 65 },
-        "precio": { "integerValue": 620000 },
-        "modelo3D": { "stringValue": "cpu_am4_model" }
+        "nombre": {
+          "stringValue": "AMD Athlon 3000G"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 35
+        },
+        "precio": {
+          "integerValue": 220000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
       }
     },
     {
-      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_intel_i5_12400f",
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_002",
       "fields": {
-        "nombre": { "stringValue": "Intel Core i5-12400F" },
-        "socket": { "stringValue": "LGA1700" },
-        "tdp_vatios": { "integerValue": 65 },
-        "precio": { "integerValue": 580000 },
-        "modelo3D": { "stringValue": "cpu_lga1700_model" }
+        "nombre": {
+          "stringValue": "AMD Ryzen 3 3200G"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 340000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
       }
     },
     {
-      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_b550m",
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_003",
       "fields": {
-        "nombre": { "stringValue": "ASUS Prime B550M-A" },
-        "socket": { "stringValue": "AM4" },
-        "tdp_vatios": { "integerValue": 15 },
-        "precio": { "integerValue": 450000 },
-        "modelo3D": { "stringValue": "mobo_matx_model" }
+        "nombre": {
+          "stringValue": "AMD Ryzen 3 4100"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 290000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
       }
     },
     {
-      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_b660m",
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_004",
       "fields": {
-        "nombre": { "stringValue": "Gigabyte B660M DS3H" },
-        "socket": { "stringValue": "LGA1700" },
-        "tdp_vatios": { "integerValue": 15 },
-        "precio": { "integerValue": 480000 },
-        "modelo3D": { "stringValue": "mobo_matx_intel_model" }
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 3600"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 410000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
       }
     },
     {
-      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_rtx_4060",
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_005",
       "fields": {
-        "nombre": { "stringValue": "NVIDIA RTX 4060 8GB" },
-        "socket": { "stringValue": "PCIe" },
-        "tdp_vatios": { "integerValue": 115 },
-        "precio": { "integerValue": 1349900 },
-        "modelo3D": { "stringValue": "gpu_rtx4060_model" }
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 4500"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 360000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
       }
     },
     {
-      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_rx_6600",
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_006",
       "fields": {
-        "nombre": { "stringValue": "AMD Radeon RX 6600 8GB" },
-        "socket": { "stringValue": "PCIe" },
-        "tdp_vatios": { "integerValue": 132 },
-        "precio": { "integerValue": 1150000 },
-        "modelo3D": { "stringValue": "gpu_rx6600_model" }
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 4600G"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 430000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
       }
     },
     {
-      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_16gb_ddr4",
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_007",
       "fields": {
-        "nombre": { "stringValue": "Corsair Vengeance 16GB (2x8) DDR4 3200MHz" },
-        "socket": { "stringValue": "DDR4" },
-        "tdp_vatios": { "integerValue": 5 },
-        "precio": { "integerValue": 180000 },
-        "modelo3D": { "stringValue": "ram_ddr4_model" }
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 5500"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 420000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
       }
     },
     {
-      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_650w",
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_008",
       "fields": {
-        "nombre": { "stringValue": "EVGA 650W 80+ Bronze" },
-        "socket": { "stringValue": "ATX_POWER" },
-        "tdp_vatios": { "integerValue": 650 },
-        "precio": { "integerValue": 280000 },
-        "modelo3D": { "stringValue": "psu_650w_model" }
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 5500GT"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 470000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
       }
     },
     {
-      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_mid_tower",
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_009",
       "fields": {
-        "nombre": { "stringValue": "Chasis Gamer Mid Tower Vidrio Templado" },
-        "socket": { "stringValue": "ATX_CASE" },
-        "tdp_vatios": { "integerValue": 0 },
-        "precio": { "integerValue": 210000 },
-        "modelo3D": { "stringValue": "case_mid_tower_model" }
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 5600"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 540000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_010",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 5600G"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 560000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_011",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 5600GT"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 580000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_012",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 5600X"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 620000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_013",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 5700"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 680000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_014",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 5700G"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 780000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_015",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 5700X"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 740000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_016",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 5700X3D"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 105
+        },
+        "precio": {
+          "integerValue": 990000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_017",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 5800X"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 105
+        },
+        "precio": {
+          "integerValue": 890000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_018",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 5800X3D"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 105
+        },
+        "precio": {
+          "integerValue": 1250000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_019",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 9 5900X"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 105
+        },
+        "precio": {
+          "integerValue": 1390000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_020",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 9 5950X"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 105
+        },
+        "precio": {
+          "integerValue": 1850000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_021",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 7500F"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 690000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_022",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 7600"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 880000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_023",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 7600X"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 105
+        },
+        "precio": {
+          "integerValue": 980000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_024",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 7700"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 1220000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_025",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 7700X"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 105
+        },
+        "precio": {
+          "integerValue": 1350000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_026",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 7800X3D"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 120
+        },
+        "precio": {
+          "integerValue": 1850000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_027",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 9 7900"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 1750000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_028",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 9 7900X"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 170
+        },
+        "precio": {
+          "integerValue": 1920000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_029",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 9 7900X3D"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 120
+        },
+        "precio": {
+          "integerValue": 2250000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_030",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 9 7950X"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 170
+        },
+        "precio": {
+          "integerValue": 2550000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_031",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 9 7950X3D"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 120
+        },
+        "precio": {
+          "integerValue": 2890000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_032",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 8500G"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 790000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_033",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 8600G"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 950000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_034",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 8700G"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 1420000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_035",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 5 9600X"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 1150000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_036",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 9700X"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 1620000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_037",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 9 9900X"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 120
+        },
+        "precio": {
+          "integerValue": 2190000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_038",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 9 9950X"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 170
+        },
+        "precio": {
+          "integerValue": 2950000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_039",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Ryzen 7 9800X3D"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 120
+        },
+        "precio": {
+          "integerValue": 2390000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_040",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i3-10100F"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 280000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1200_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_041",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i3-10105F"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 310000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1200_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_042",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-10400F"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 430000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1200_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_043",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-11400F"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 490000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1200_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_044",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i7-10700K"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 850000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1200_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_045",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i7-11700K"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 990000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1200_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_046",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i9-11900K"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 1450000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1200_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_047",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i3-12100F"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 58
+        },
+        "precio": {
+          "integerValue": 390000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_048",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i3-13100F"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 58
+        },
+        "precio": {
+          "integerValue": 460000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_049",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i3-14100F"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 58
+        },
+        "precio": {
+          "integerValue": 510000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_050",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-12400F"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 580000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_051",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-12600K"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 820000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_052",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-13400F"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 850000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_053",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-13500"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 1120000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_054",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-13600K"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 1350000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_055",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-14400F"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 940000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_056",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-14500"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 65
+        },
+        "precio": {
+          "integerValue": 1180000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_057",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i5-14600K"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 1420000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_058",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i7-12700K"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 1280000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_059",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i7-13700K"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 1750000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_060",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i7-14700K"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 1980000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_061",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i9-13900K"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 150
+        },
+        "precio": {
+          "integerValue": 2450000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_062",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i9-14900K"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 150
+        },
+        "precio": {
+          "integerValue": 2790000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_063",
+      "fields": {
+        "nombre": {
+          "stringValue": "Intel Core i9-14900KS"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 150
+        },
+        "precio": {
+          "integerValue": 3250000
+        },
+        "modelo3D": {
+          "stringValue": "cpu_lga1700_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_064",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASRock A320M-HDV"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 230000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_065",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte A520M S2H"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 270000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_066",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASRock A520M-HVS"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 290000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_067",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS Prime B450M-A II"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 360000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_068",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI B450M Pro-VDH Max"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 380000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_069",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte B550M DS3H"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 420000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_070",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS Prime B550M-A WiFi II"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 470000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_071",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI B550-A Pro"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 20
+        },
+        "precio": {
+          "integerValue": 580000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_atx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_072",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MAG B550 Tomahawk"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 20
+        },
+        "precio": {
+          "integerValue": 750000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_atx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_073",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS ROG Strix B550-F Gaming"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 20
+        },
+        "precio": {
+          "integerValue": 820000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_atx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_074",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASRock X570 Phantom Gaming 4"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 25
+        },
+        "precio": {
+          "integerValue": 890000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_atx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_075",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS ROG Strix X570-E Gaming"
+        },
+        "socket": {
+          "stringValue": "AM4"
+        },
+        "tdp_vatios": {
+          "integerValue": 30
+        },
+        "precio": {
+          "integerValue": 1250000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_atx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_076",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASRock A620M-HDV/M.2"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 430000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_077",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte A620M Gaming X"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 510000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_078",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI PRO B650M-P"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 20
+        },
+        "precio": {
+          "integerValue": 640000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_079",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS Prime B650M-A AX"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 20
+        },
+        "precio": {
+          "integerValue": 720000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_080",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte B650 Gaming X AX"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 20
+        },
+        "precio": {
+          "integerValue": 890000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_081",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MAG B650 Mortar WiFi"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 25
+        },
+        "precio": {
+          "integerValue": 960000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_082",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MAG B650 Tomahawk WiFi"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 25
+        },
+        "precio": {
+          "integerValue": 1050000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_083",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS ROG Strix B650-A Gaming"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 25
+        },
+        "precio": {
+          "integerValue": 1250000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_084",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte X670 Gaming X AX"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 30
+        },
+        "precio": {
+          "integerValue": 1420000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_085",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS TUF Gaming X670E-Plus"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 30
+        },
+        "precio": {
+          "integerValue": 1680000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_086",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS ROG Strix X670E-F"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 35
+        },
+        "precio": {
+          "integerValue": 2100000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_087",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MEG X670E ACE"
+        },
+        "socket": {
+          "stringValue": "AM5"
+        },
+        "tdp_vatios": {
+          "integerValue": 40
+        },
+        "precio": {
+          "integerValue": 2850000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_am5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_088",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASRock H410M-HDV"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 250000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_089",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte B460M DS3H"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 330000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_090",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS Prime B560M-A"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 410000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_091",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MAG Z490 Tomahawk"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 25
+        },
+        "precio": {
+          "integerValue": 780000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_092",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS ROG Strix Z590-E"
+        },
+        "socket": {
+          "stringValue": "LGA1200"
+        },
+        "tdp_vatios": {
+          "integerValue": 30
+        },
+        "precio": {
+          "integerValue": 1150000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_093",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASRock H610M-HDV/M.2"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 340000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_094",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte H610M S2H DDR4"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 360000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_095",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI PRO B660M-E DDR4"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 430000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_096",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS Prime B660M-A D4"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 520000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_097",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte B760M DS3H AX D4"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 20
+        },
+        "precio": {
+          "integerValue": 620000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_098",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS TUF Gaming B760M-Plus WiFi"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 20
+        },
+        "precio": {
+          "integerValue": 780000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_099",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MAG B760 Tomahawk WiFi"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 25
+        },
+        "precio": {
+          "integerValue": 950000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_100",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte Z690 UD DDR4"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 25
+        },
+        "precio": {
+          "integerValue": 980000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_101",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS Prime Z790-P WiFi"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 25
+        },
+        "precio": {
+          "integerValue": 1180000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_102",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MPG Z790 Carbon WiFi"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 30
+        },
+        "precio": {
+          "integerValue": 1850000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_103",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS ROG Maximus Z790 Hero"
+        },
+        "socket": {
+          "stringValue": "LGA1700"
+        },
+        "tdp_vatios": {
+          "integerValue": 40
+        },
+        "precio": {
+          "integerValue": 2750000
+        },
+        "modelo3D": {
+          "stringValue": "mobo_intel_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_104",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 550 4GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 50
+        },
+        "precio": {
+          "integerValue": 290000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx550_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_105",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA GT 1030 2GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 30
+        },
+        "precio": {
+          "integerValue": 310000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_gt1030_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_106",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA GTX 1050 Ti 4GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 75
+        },
+        "precio": {
+          "integerValue": 480000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_gtx1050ti_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_107",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 580 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 185
+        },
+        "precio": {
+          "integerValue": 490000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx580_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_108",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA GTX 1650 4GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 75
+        },
+        "precio": {
+          "integerValue": 620000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_gtx1650_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_109",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA GTX 1660 Super 6GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 125
+        },
+        "precio": {
+          "integerValue": 850000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_gtx1660s_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_110",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 6500 XT 4GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 107
+        },
+        "precio": {
+          "integerValue": 720000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx6500xt_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_111",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 6600 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 132
+        },
+        "precio": {
+          "integerValue": 1150000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx6600_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_112",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 6650 XT 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 180
+        },
+        "precio": {
+          "integerValue": 1320000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx6650xt_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_113",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 2060 6GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 160
+        },
+        "precio": {
+          "integerValue": 1080000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx2060_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_114",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 3050 6GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 70
+        },
+        "precio": {
+          "integerValue": 920000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx3050_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_115",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 3050 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 130
+        },
+        "precio": {
+          "integerValue": 1120000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx3050_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_116",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 3060 12GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 170
+        },
+        "precio": {
+          "integerValue": 1380000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx3060_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_117",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 3060 Ti 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 200
+        },
+        "precio": {
+          "integerValue": 1650000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx3060ti_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_118",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 3070 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 220
+        },
+        "precio": {
+          "integerValue": 1950000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx3070_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_119",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 3070 Ti 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 290
+        },
+        "precio": {
+          "integerValue": 2250000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx3070ti_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_120",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 3080 10GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 320
+        },
+        "precio": {
+          "integerValue": 2650000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx3080_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_121",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 6700 XT 12GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 230
+        },
+        "precio": {
+          "integerValue": 1750000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx6700xt_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_122",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 6750 XT 12GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 250
+        },
+        "precio": {
+          "integerValue": 1920000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx6750xt_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_123",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 6800 XT 16GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 300
+        },
+        "precio": {
+          "integerValue": 2450000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx6800xt_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_124",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 7600 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 165
+        },
+        "precio": {
+          "integerValue": 1290000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx7600_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_125",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 7600 XT 16GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 190
+        },
+        "precio": {
+          "integerValue": 1580000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx7600xt_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_126",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4060 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 115
+        },
+        "precio": {
+          "integerValue": 1490000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4060_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_127",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4060 Ti 8GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 160
+        },
+        "precio": {
+          "integerValue": 1950000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4060ti_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_128",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4060 Ti 16GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 165
+        },
+        "precio": {
+          "integerValue": 2350000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4060ti_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_129",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 7700 XT 12GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 245
+        },
+        "precio": {
+          "integerValue": 2250000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx7700xt_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_130",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 7800 XT 16GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 263
+        },
+        "precio": {
+          "integerValue": 2690000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx7800xt_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_131",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4070 12GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 200
+        },
+        "precio": {
+          "integerValue": 2750000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4070_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_132",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4070 Super 12GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 220
+        },
+        "precio": {
+          "integerValue": 2980000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4070s_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_133",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4070 Ti 12GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 285
+        },
+        "precio": {
+          "integerValue": 3450000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4070ti_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_134",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4070 Ti Super 16GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 285
+        },
+        "precio": {
+          "integerValue": 3950000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4070tis_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_135",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 7900 GRE 16GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 268
+        },
+        "precio": {
+          "integerValue": 3150000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx7900gre_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_136",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 7900 XT 20GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 315
+        },
+        "precio": {
+          "integerValue": 4100000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx7900xt_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_137",
+      "fields": {
+        "nombre": {
+          "stringValue": "AMD Radeon RX 7900 XTX 24GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 355
+        },
+        "precio": {
+          "integerValue": 5200000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rx7900xtx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_138",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4080 16GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 320
+        },
+        "precio": {
+          "integerValue": 4850000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4080_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_139",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4080 Super 16GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 320
+        },
+        "precio": {
+          "integerValue": 5450000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4080s_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_140",
+      "fields": {
+        "nombre": {
+          "stringValue": "NVIDIA RTX 4090 24GB"
+        },
+        "socket": {
+          "stringValue": "PCIe"
+        },
+        "tdp_vatios": {
+          "integerValue": 450
+        },
+        "precio": {
+          "integerValue": 9850000
+        },
+        "modelo3D": {
+          "stringValue": "gpu_rtx4090_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_141",
+      "fields": {
+        "nombre": {
+          "stringValue": "Kingston Fury Beast 8GB DDR4 2666MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 3
+        },
+        "precio": {
+          "integerValue": 85000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_142",
+      "fields": {
+        "nombre": {
+          "stringValue": "Crucial 8GB DDR4 3200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 3
+        },
+        "precio": {
+          "integerValue": 89000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_143",
+      "fields": {
+        "nombre": {
+          "stringValue": "Adata XPG Spectrix 8GB DDR4 3200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 3
+        },
+        "precio": {
+          "integerValue": 98000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_144",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair Vengeance LPX 8GB DDR4 3200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 3
+        },
+        "precio": {
+          "integerValue": 105000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_145",
+      "fields": {
+        "nombre": {
+          "stringValue": "Kingston Fury Beast 16GB (1x16) DDR4 3200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 4
+        },
+        "precio": {
+          "integerValue": 165000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_146",
+      "fields": {
+        "nombre": {
+          "stringValue": "Kingston Fury Beast 16GB (2x8) DDR4 3200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 5
+        },
+        "precio": {
+          "integerValue": 175000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_147",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair Vengeance LPX 16GB (2x8) DDR4 3200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 5
+        },
+        "precio": {
+          "integerValue": 185000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_148",
+      "fields": {
+        "nombre": {
+          "stringValue": "Teamgroup T-Force Delta RGB 16GB (2x8) DDR4 3600MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 5
+        },
+        "precio": {
+          "integerValue": 215000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_149",
+      "fields": {
+        "nombre": {
+          "stringValue": "Adata XPG Spectrix D50 RGB 16GB (2x8) DDR4 3600MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 5
+        },
+        "precio": {
+          "integerValue": 225000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_150",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair Vengeance RGB Pro 16GB (2x8) DDR4 3600MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 6
+        },
+        "precio": {
+          "integerValue": 245000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_151",
+      "fields": {
+        "nombre": {
+          "stringValue": "Kingston Fury Beast 32GB (2x16) DDR4 3200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 6
+        },
+        "precio": {
+          "integerValue": 320000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_152",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair Vengeance LPX 32GB (2x16) DDR4 3200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 6
+        },
+        "precio": {
+          "integerValue": 340000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_153",
+      "fields": {
+        "nombre": {
+          "stringValue": "Kingston Fury Renegade 32GB (2x16) DDR4 3600MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 7
+        },
+        "precio": {
+          "integerValue": 360000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_154",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair Vengeance RGB Pro 32GB (2x16) DDR4 3600MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 7
+        },
+        "precio": {
+          "integerValue": 410000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_155",
+      "fields": {
+        "nombre": {
+          "stringValue": "G.Skill Ripjaws V 64GB (2x32) DDR4 3600MHz"
+        },
+        "socket": {
+          "stringValue": "DDR4"
+        },
+        "tdp_vatios": {
+          "integerValue": 10
+        },
+        "precio": {
+          "integerValue": 680000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr4_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_156",
+      "fields": {
+        "nombre": {
+          "stringValue": "Crucial 8GB DDR5 4800MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 4
+        },
+        "precio": {
+          "integerValue": 125000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_157",
+      "fields": {
+        "nombre": {
+          "stringValue": "Kingston Fury Beast 8GB DDR5 5200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 4
+        },
+        "precio": {
+          "integerValue": 145000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_158",
+      "fields": {
+        "nombre": {
+          "stringValue": "Kingston Fury Beast 16GB (1x16) DDR5 5600MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 5
+        },
+        "precio": {
+          "integerValue": 240000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_159",
+      "fields": {
+        "nombre": {
+          "stringValue": "Kingston Fury Beast 16GB (2x8) DDR5 5200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 6
+        },
+        "precio": {
+          "integerValue": 260000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_160",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair Vengeance 32GB (2x16) DDR5 5600MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 8
+        },
+        "precio": {
+          "integerValue": 480000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_161",
+      "fields": {
+        "nombre": {
+          "stringValue": "G.Skill Flare X5 32GB (2x16) DDR5 6000MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 8
+        },
+        "precio": {
+          "integerValue": 540000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_162",
+      "fields": {
+        "nombre": {
+          "stringValue": "Teamgroup T-Force Delta RGB 32GB (2x16) DDR5 6000MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 8
+        },
+        "precio": {
+          "integerValue": 580000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_163",
+      "fields": {
+        "nombre": {
+          "stringValue": "Kingston Fury Renegade RGB 32GB (2x16) DDR5 6400MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 8
+        },
+        "precio": {
+          "integerValue": 620000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_164",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair Dominator Titanium 32GB (2x16) DDR5 7200MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 9
+        },
+        "precio": {
+          "integerValue": 850000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_165",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair Vengeance 64GB (2x32) DDR5 5600MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 10
+        },
+        "precio": {
+          "integerValue": 950000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_166",
+      "fields": {
+        "nombre": {
+          "stringValue": "G.Skill Trident Z5 RGB 64GB (2x32) DDR5 6000MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 12
+        },
+        "precio": {
+          "integerValue": 1150000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_167",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair Dominator Titanium 64GB (2x32) DDR5 6400MHz"
+        },
+        "socket": {
+          "stringValue": "DDR5"
+        },
+        "tdp_vatios": {
+          "integerValue": 12
+        },
+        "precio": {
+          "integerValue": 1280000
+        },
+        "modelo3D": {
+          "stringValue": "ram_ddr5_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_168",
+      "fields": {
+        "nombre": {
+          "stringValue": "Janus 450W Standar"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 450
+        },
+        "precio": {
+          "integerValue": 110000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_169",
+      "fields": {
+        "nombre": {
+          "stringValue": "Thermaltake Smart 500W 80+ White"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 500
+        },
+        "precio": {
+          "integerValue": 190000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_170",
+      "fields": {
+        "nombre": {
+          "stringValue": "EVGA 500 W1 500W 80+ White"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 500
+        },
+        "precio": {
+          "integerValue": 210000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_171",
+      "fields": {
+        "nombre": {
+          "stringValue": "Aerocool VX Plus 550W"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 550
+        },
+        "precio": {
+          "integerValue": 165000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_172",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair CV550 550W 80+ Bronze"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 550
+        },
+        "precio": {
+          "integerValue": 245000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_173",
+      "fields": {
+        "nombre": {
+          "stringValue": "EVGA 600 W1 600W 80+ White"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 600
+        },
+        "precio": {
+          "integerValue": 250000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_174",
+      "fields": {
+        "nombre": {
+          "stringValue": "Thermaltake BX1 650W 80+ Bronze"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 650
+        },
+        "precio": {
+          "integerValue": 270000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_175",
+      "fields": {
+        "nombre": {
+          "stringValue": "EVGA 650 BP 650W 80+ Bronze"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 650
+        },
+        "precio": {
+          "integerValue": 290000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_176",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MAG A650BN 650W 80+ Bronze"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 650
+        },
+        "precio": {
+          "integerValue": 310000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_177",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair CX650M 650W 80+ Bronze Semi-Modular"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 650
+        },
+        "precio": {
+          "integerValue": 370000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_178",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte P650B 650W 80+ Bronze"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 650
+        },
+        "precio": {
+          "integerValue": 330000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_179",
+      "fields": {
+        "nombre": {
+          "stringValue": "EVGA 700 GD 700W 80+ Gold"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 700
+        },
+        "precio": {
+          "integerValue": 420000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_180",
+      "fields": {
+        "nombre": {
+          "stringValue": "Gigabyte P750GM 750W 80+ Gold Modular"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 750
+        },
+        "precio": {
+          "integerValue": 440000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_181",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair RM750e 750W 80+ Gold ATX 3.0"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 750
+        },
+        "precio": {
+          "integerValue": 520000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_182",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MAG A750GL 750W 80+ Gold ATX 3.0"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 750
+        },
+        "precio": {
+          "integerValue": 530000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_183",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MAG A850GL 850W 80+ Gold ATX 3.0"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 850
+        },
+        "precio": {
+          "integerValue": 610000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_184",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair RM850x 850W 80+ Gold Modular"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 850
+        },
+        "precio": {
+          "integerValue": 690000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_185",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS ROG Strix 850W 80+ Gold Modular"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 850
+        },
+        "precio": {
+          "integerValue": 820000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_186",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair RM1000e 1000W 80+ Gold ATX 3.0"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 1000
+        },
+        "precio": {
+          "integerValue": 890000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_187",
+      "fields": {
+        "nombre": {
+          "stringValue": "Corsair RM1000x 1000W 80+ Gold Modular"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 1000
+        },
+        "precio": {
+          "integerValue": 980000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_188",
+      "fields": {
+        "nombre": {
+          "stringValue": "MSI MEG Ai1300P 1300W 80+ Platinum ATX 3.0"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 1300
+        },
+        "precio": {
+          "integerValue": 1850000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_189",
+      "fields": {
+        "nombre": {
+          "stringValue": "ASUS ROG Thor 1200W 80+ Platinum"
+        },
+        "socket": {
+          "stringValue": "ATX_POWER"
+        },
+        "tdp_vatios": {
+          "integerValue": 1200
+        },
+        "precio": {
+          "integerValue": 1650000
+        },
+        "modelo3D": {
+          "stringValue": "psu_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_190",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Iceberg Basic mATX"
+        },
+        "socket": {
+          "stringValue": "MATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 120000
+        },
+        "modelo3D": {
+          "stringValue": "case_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_191",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Janus AX-6 mATX"
+        },
+        "socket": {
+          "stringValue": "MATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 145000
+        },
+        "modelo3D": {
+          "stringValue": "case_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_192",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Aerocool CS-107 mATX Mesh"
+        },
+        "socket": {
+          "stringValue": "MATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 165000
+        },
+        "modelo3D": {
+          "stringValue": "case_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_193",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Iceberg Flow mATX Vidrio Templado"
+        },
+        "socket": {
+          "stringValue": "MATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 195000
+        },
+        "modelo3D": {
+          "stringValue": "case_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_194",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Thermaltake Versa H15 mATX"
+        },
+        "socket": {
+          "stringValue": "MATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 210000
+        },
+        "modelo3D": {
+          "stringValue": "case_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_195",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis MSI MAG Forge 100M mATX"
+        },
+        "socket": {
+          "stringValue": "MATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 225000
+        },
+        "modelo3D": {
+          "stringValue": "case_matx_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_196",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Iceberg Titanium Mid Tower ARGB"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 230000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_197",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Aerocool Falcon Mid Tower ARGB"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 245000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_198",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis MSI Mag Shield 110R Mid Tower"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 260000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_199",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Thermaltake H200 TG RGB Mid Tower"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 290000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_200",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Cooler Master MasterBox TD500 Mesh"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 380000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_201",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Corsair 4000D Airflow Mid Tower"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 410000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_202",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis NZXT H5 Flow RGB Mid Tower"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 480000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_203",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Lian Li LANCOOL 216 Mesh"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 520000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_204",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis ASUS TUF Gaming GT301"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 560000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_205",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Corsair 5000D Airflow Mid Tower"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 720000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_206",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Lian Li O11 Dynamic EVO"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 920000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_207",
+      "fields": {
+        "nombre": {
+          "stringValue": "Chasis Hyte Y60 Panorama Dual Chamber"
+        },
+        "socket": {
+          "stringValue": "ATX_CASE"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 980000
+        },
+        "modelo3D": {
+          "stringValue": "case_mid_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_208",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD Kingston A400 240GB SATA 2.5"
+        },
+        "socket": {
+          "stringValue": "SATA"
+        },
+        "tdp_vatios": {
+          "integerValue": 2
+        },
+        "precio": {
+          "integerValue": 95000
+        },
+        "modelo3D": {
+          "stringValue": "storage_sata_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_209",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD Crucial BX500 480GB SATA 2.5"
+        },
+        "socket": {
+          "stringValue": "SATA"
+        },
+        "tdp_vatios": {
+          "integerValue": 2
+        },
+        "precio": {
+          "integerValue": 145000
+        },
+        "modelo3D": {
+          "stringValue": "storage_sata_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_210",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD Kingston A400 960GB SATA 2.5"
+        },
+        "socket": {
+          "stringValue": "SATA"
+        },
+        "tdp_vatios": {
+          "integerValue": 3
+        },
+        "precio": {
+          "integerValue": 240000
+        },
+        "modelo3D": {
+          "stringValue": "storage_sata_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_211",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD Crucial MX500 1TB SATA 2.5"
+        },
+        "socket": {
+          "stringValue": "SATA"
+        },
+        "tdp_vatios": {
+          "integerValue": 3
+        },
+        "precio": {
+          "integerValue": 280000
+        },
+        "modelo3D": {
+          "stringValue": "storage_sata_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_212",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe Kingston NV2 500GB PCIe 4.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 4
+        },
+        "precio": {
+          "integerValue": 185000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_213",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe WD Blue SN580 500GB PCIe 4.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 4
+        },
+        "precio": {
+          "integerValue": 210000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_214",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe Crucial P3 1TB PCIe 3.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 4
+        },
+        "precio": {
+          "integerValue": 280000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_215",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe Kingston NV2 1TB PCIe 4.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 5
+        },
+        "precio": {
+          "integerValue": 295000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_216",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe WD Black SN770 1TB PCIe 4.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 6
+        },
+        "precio": {
+          "integerValue": 380000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_217",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe Samsung 980 Pro 1TB PCIe 4.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 7
+        },
+        "precio": {
+          "integerValue": 490000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_218",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe Kingston NV2 2TB PCIe 4.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 6
+        },
+        "precio": {
+          "integerValue": 540000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_219",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe WD Black SN850X 2TB PCIe 4.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 8
+        },
+        "precio": {
+          "integerValue": 780000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_220",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe Samsung 990 Pro 2TB PCIe 4.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 8
+        },
+        "precio": {
+          "integerValue": 890000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_221",
+      "fields": {
+        "nombre": {
+          "stringValue": "SSD NVMe Crucial T700 1TB PCIe 5.0"
+        },
+        "socket": {
+          "stringValue": "NVME"
+        },
+        "tdp_vatios": {
+          "integerValue": 10
+        },
+        "precio": {
+          "integerValue": 820000
+        },
+        "modelo3D": {
+          "stringValue": "storage_nvme_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_222",
+      "fields": {
+        "nombre": {
+          "stringValue": "HDD Seagate Barracuda 1TB 3.5 7200RPM"
+        },
+        "socket": {
+          "stringValue": "SATA"
+        },
+        "tdp_vatios": {
+          "integerValue": 7
+        },
+        "precio": {
+          "integerValue": 195000
+        },
+        "modelo3D": {
+          "stringValue": "storage_hdd_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_223",
+      "fields": {
+        "nombre": {
+          "stringValue": "HDD WD Blue 2TB 3.5 7200RPM"
+        },
+        "socket": {
+          "stringValue": "SATA"
+        },
+        "tdp_vatios": {
+          "integerValue": 8
+        },
+        "precio": {
+          "integerValue": 260000
+        },
+        "modelo3D": {
+          "stringValue": "storage_hdd_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/storage_224",
+      "fields": {
+        "nombre": {
+          "stringValue": "HDD Seagate Barracuda 4TB 3.5 5400RPM"
+        },
+        "socket": {
+          "stringValue": "SATA"
+        },
+        "tdp_vatios": {
+          "integerValue": 9
+        },
+        "precio": {
+          "integerValue": 410000
+        },
+        "modelo3D": {
+          "stringValue": "storage_hdd_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_225",
+      "fields": {
+        "nombre": {
+          "stringValue": "Disipador Stock AMD Wraith Stealth"
+        },
+        "socket": {
+          "stringValue": "AIR_COOLER"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 35000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_stock_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_226",
+      "fields": {
+        "nombre": {
+          "stringValue": "Disipador Stock Intel Laminar RM1"
+        },
+        "socket": {
+          "stringValue": "AIR_COOLER"
+        },
+        "tdp_vatios": {
+          "integerValue": 0
+        },
+        "precio": {
+          "integerValue": 35000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_stock_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_227",
+      "fields": {
+        "nombre": {
+          "stringValue": "Disipador Torre Iceberg Icefloe ARGB"
+        },
+        "socket": {
+          "stringValue": "AIR_COOLER"
+        },
+        "tdp_vatios": {
+          "integerValue": 5
+        },
+        "precio": {
+          "integerValue": 85000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_228",
+      "fields": {
+        "nombre": {
+          "stringValue": "Disipador Torre DeepCool AG400 ARGB"
+        },
+        "socket": {
+          "stringValue": "AIR_COOLER"
+        },
+        "tdp_vatios": {
+          "integerValue": 5
+        },
+        "precio": {
+          "integerValue": 125000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_229",
+      "fields": {
+        "nombre": {
+          "stringValue": "Disipador Torre Cooler Master Hyper 212 Halo"
+        },
+        "socket": {
+          "stringValue": "AIR_COOLER"
+        },
+        "tdp_vatios": {
+          "integerValue": 6
+        },
+        "precio": {
+          "integerValue": 175000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_230",
+      "fields": {
+        "nombre": {
+          "stringValue": "Disipador Torre Thermalright Peerless Assassin 120 SE"
+        },
+        "socket": {
+          "stringValue": "AIR_COOLER"
+        },
+        "tdp_vatios": {
+          "integerValue": 8
+        },
+        "precio": {
+          "integerValue": 210000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_231",
+      "fields": {
+        "nombre": {
+          "stringValue": "Disipador Torre DeepCool AK620 Digital"
+        },
+        "socket": {
+          "stringValue": "AIR_COOLER"
+        },
+        "tdp_vatios": {
+          "integerValue": 9
+        },
+        "precio": {
+          "integerValue": 340000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_232",
+      "fields": {
+        "nombre": {
+          "stringValue": "Disipador Torre Noctua NH-D15 Chromax Black"
+        },
+        "socket": {
+          "stringValue": "AIR_COOLER"
+        },
+        "tdp_vatios": {
+          "integerValue": 10
+        },
+        "precio": {
+          "integerValue": 590000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_tower_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_233",
+      "fields": {
+        "nombre": {
+          "stringValue": "Refrigeración Líquida Iceberg Waterfloe 120 ARGB"
+        },
+        "socket": {
+          "stringValue": "AIO_LIQUID"
+        },
+        "tdp_vatios": {
+          "integerValue": 10
+        },
+        "precio": {
+          "integerValue": 195000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_aio_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_234",
+      "fields": {
+        "nombre": {
+          "stringValue": "Refrigeración Líquida Iceberg Waterfloe 240 ARGB"
+        },
+        "socket": {
+          "stringValue": "AIO_LIQUID"
+        },
+        "tdp_vatios": {
+          "integerValue": 12
+        },
+        "precio": {
+          "integerValue": 260000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_aio_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_235",
+      "fields": {
+        "nombre": {
+          "stringValue": "Refrigeración Líquida DeepCool LE520 240mm"
+        },
+        "socket": {
+          "stringValue": "AIO_LIQUID"
+        },
+        "tdp_vatios": {
+          "integerValue": 12
+        },
+        "precio": {
+          "integerValue": 340000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_aio_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_236",
+      "fields": {
+        "nombre": {
+          "stringValue": "Refrigeración Líquida MSI MAG CoreLiquid 240R V2"
+        },
+        "socket": {
+          "stringValue": "AIO_LIQUID"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 430000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_aio_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_237",
+      "fields": {
+        "nombre": {
+          "stringValue": "Refrigeración Líquida Corsair H100i RGB Elite 240mm"
+        },
+        "socket": {
+          "stringValue": "AIO_LIQUID"
+        },
+        "tdp_vatios": {
+          "integerValue": 15
+        },
+        "precio": {
+          "integerValue": 620000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_aio_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_238",
+      "fields": {
+        "nombre": {
+          "stringValue": "Refrigeración Líquida DeepCool LS720 360mm"
+        },
+        "socket": {
+          "stringValue": "AIO_LIQUID"
+        },
+        "tdp_vatios": {
+          "integerValue": 18
+        },
+        "precio": {
+          "integerValue": 590000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_aio_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_239",
+      "fields": {
+        "nombre": {
+          "stringValue": "Refrigeración Líquida NZXT Kraken 360 RGB 360mm"
+        },
+        "socket": {
+          "stringValue": "AIO_LIQUID"
+        },
+        "tdp_vatios": {
+          "integerValue": 20
+        },
+        "precio": {
+          "integerValue": 1150000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_aio_model"
+        }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cooler_240",
+      "fields": {
+        "nombre": {
+          "stringValue": "Refrigeración Líquida Corsair iCUE H150i Elite LCD XT"
+        },
+        "socket": {
+          "stringValue": "AIO_LIQUID"
+        },
+        "tdp_vatios": {
+          "integerValue": 22
+        },
+        "precio": {
+          "integerValue": 1420000
+        },
+        "modelo3D": {
+          "stringValue": "cooler_aio_model"
+        }
       }
     }
   ]
