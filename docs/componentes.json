@@ -1,0 +1,94 @@
+{
+  "documents": [
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_ryzen_5600x",
+      "fields": {
+        "nombre": { "stringValue": "AMD Ryzen 5 5600X" },
+        "socket": { "stringValue": "AM4" },
+        "tdp_vatios": { "integerValue": 65 },
+        "precio": { "integerValue": 620000 },
+        "modelo3D": { "stringValue": "cpu_am4_model" }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/cpu_intel_i5_12400f",
+      "fields": {
+        "nombre": { "stringValue": "Intel Core i5-12400F" },
+        "socket": { "stringValue": "LGA1700" },
+        "tdp_vatios": { "integerValue": 65 },
+        "precio": { "integerValue": 580000 },
+        "modelo3D": { "stringValue": "cpu_lga1700_model" }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_b550m",
+      "fields": {
+        "nombre": { "stringValue": "ASUS Prime B550M-A" },
+        "socket": { "stringValue": "AM4" },
+        "tdp_vatios": { "integerValue": 15 },
+        "precio": { "integerValue": 450000 },
+        "modelo3D": { "stringValue": "mobo_matx_model" }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/mobo_b660m",
+      "fields": {
+        "nombre": { "stringValue": "Gigabyte B660M DS3H" },
+        "socket": { "stringValue": "LGA1700" },
+        "tdp_vatios": { "integerValue": 15 },
+        "precio": { "integerValue": 480000 },
+        "modelo3D": { "stringValue": "mobo_matx_intel_model" }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_rtx_4060",
+      "fields": {
+        "nombre": { "stringValue": "NVIDIA RTX 4060 8GB" },
+        "socket": { "stringValue": "PCIe" },
+        "tdp_vatios": { "integerValue": 115 },
+        "precio": { "integerValue": 1349900 },
+        "modelo3D": { "stringValue": "gpu_rtx4060_model" }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/gpu_rx_6600",
+      "fields": {
+        "nombre": { "stringValue": "AMD Radeon RX 6600 8GB" },
+        "socket": { "stringValue": "PCIe" },
+        "tdp_vatios": { "integerValue": 132 },
+        "precio": { "integerValue": 1150000 },
+        "modelo3D": { "stringValue": "gpu_rx6600_model" }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/ram_16gb_ddr4",
+      "fields": {
+        "nombre": { "stringValue": "Corsair Vengeance 16GB (2x8) DDR4 3200MHz" },
+        "socket": { "stringValue": "DDR4" },
+        "tdp_vatios": { "integerValue": 5 },
+        "precio": { "integerValue": 180000 },
+        "modelo3D": { "stringValue": "ram_ddr4_model" }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/psu_650w",
+      "fields": {
+        "nombre": { "stringValue": "EVGA 650W 80+ Bronze" },
+        "socket": { "stringValue": "ATX_POWER" },
+        "tdp_vatios": { "integerValue": 650 },
+        "precio": { "integerValue": 280000 },
+        "modelo3D": { "stringValue": "psu_650w_model" }
+      }
+    },
+    {
+      "name": "projects/buildpc3d/databases/(default)/documents/Componentes/chassis_mid_tower",
+      "fields": {
+        "nombre": { "stringValue": "Chasis Gamer Mid Tower Vidrio Templado" },
+        "socket": { "stringValue": "ATX_CASE" },
+        "tdp_vatios": { "integerValue": 0 },
+        "precio": { "integerValue": 210000 },
+        "modelo3D": { "stringValue": "case_mid_tower_model" }
+      }
+    }
+  ]
+}
