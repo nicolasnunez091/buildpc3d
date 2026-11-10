@@ -10,12 +10,6 @@ site:
       content:
         directory: null
     - type: space
-      key: space-2
-      title: Untitled
-      path: untitled
-      content:
-        directory: ./untitled
-    - type: space
       key: space-3
       title: Untitled
       path: untitled-1
