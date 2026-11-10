@@ -8,10 +8,10 @@ site:
       path: documentation
       default: true
       content:
-        directory: null
+        directory: ./documentation
     - type: space
       key: space-3
       title: Untitled
       path: untitled-1
       content:
-        directory: ./untitled
+        directory: ./untitled-1
