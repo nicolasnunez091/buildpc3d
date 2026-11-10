@@ -1,0 +1,13 @@
+
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: BUILDPC3D
+  structure:
+    - type: space
+      key: buildpc3d
+      title: BUILDPC3D
+      path: buildpc3d
+      default: true
+      content:
+        directory: ./
+        language: es
