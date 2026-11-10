@@ -3,9 +3,9 @@
 **BUILDPC3D** es una aplicación móvil desarrollada con arquitectura monolítica modular, diseñada para guiar a usuarios sin experiencia en el ensamble de computadores de escritorio. Utiliza procesamiento de lenguaje natural para identificar el perfil de uso del cliente y un motor de recomendación estricto para garantizar 100% de compatibilidad física y eléctrica.
 
 ## Equipo de Desarrollo
-* **Juan José Hernández** - Analista 
+* **Juan José Hernández** -  Desarrollador Principal
 * **Nicolás Núñez** - Arquitecto de Datos / Diseñador UX/UI
-* **Juan Lozano** - Desarrollador Principal
+* **Juan Lozano** - Analista
 * **Samuel García** - QA Tester
 
 ## Stack Tecnológico
