@@ -51,9 +51,9 @@ El proyecto cuenta con un plan de trabajo estructurado en 7 semanas y un presupu
 
 | Rol                      | Integrante                    | Responsabilidad Principal                                          |
 | ------------------------ | ----------------------------- | ------------------------------------------------------------------ |
-| **Analista de Sistemas** | Juan José Hernández Ruiz      | Análisis de requisitos, reglas de negocio y modelo ERS             |
+| **Analista de Sistemas** | Juan David Lozano Rincón      | Análisis de requisitos, reglas de negocio y modelo ERS             |
 | **Diseñador de Sistema** | Nicolás Carlos Núñez Figueroa | Arquitectura del software, UX/UI y diseño de integración 3D        |
-| **Desarrollador**        | Juan David Lozano Rincón      | Codificación de la app cliente y conexión DAO / Firebase           |
+| **Desarrollador**        | Juan José Hernández Ruiz      | Codificación de la app cliente y conexión DAO / Firebase           |
 | **Software Tester (QA)** | Samuel García                 | Diseño y ejecución de la matriz de pruebas unitarias e integración |
 
 ***
