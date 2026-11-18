@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /meta/catalog {
+      allow get: if true;
+      allow list, create, update, delete: if false;
+    }
+    match /{collection}/{docId} {
+      allow read: if collection in [
+        'procesadores', 'tarjetas_madre', 'memorias_ram',
+        'tarjetas_video', 'fuentes_poder', 'chasis'
+      ];
+      allow write: if false;
+    }
+  }
+}

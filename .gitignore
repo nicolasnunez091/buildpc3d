@@ -1,0 +1,28 @@
+# Godot
+.godot/
+*.tmp
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+backend/.env
+.env.*
+!.env.example
+# Seguridad
+*serviceAccount*.json
+*service-account*.json
+# Artefactos generados
+*.apk
+*.aab
+
+# Firmas y archivos privados
+*.idsig
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*credentials*.json
+*firebase-adminsdk*.json

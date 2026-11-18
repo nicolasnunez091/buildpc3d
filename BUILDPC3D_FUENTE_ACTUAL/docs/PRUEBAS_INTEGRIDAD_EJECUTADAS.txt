@@ -1,0 +1,15 @@
+test_compatible_builds_of_all_uses (test_project_integrity.CatalogTests.test_compatible_builds_of_all_uses) ... ok
+test_no_invalid_socket_or_memory_combination (test_project_integrity.CatalogTests.test_no_invalid_socket_or_memory_combination) ... ok
+test_six_categories_and_42_models (test_project_integrity.CatalogTests.test_six_categories_and_42_models) ... ok
+test_unique_model_paths_and_price_provenance (test_project_integrity.CatalogTests.test_unique_model_paths_and_price_provenance) ... ok
+test_all_glbs_have_colors_or_textures (test_project_integrity.GLBTests.test_all_glbs_have_colors_or_textures) ... ok
+test_all_glbs_load_with_real_triangle_geometry (test_project_integrity.GLBTests.test_all_glbs_load_with_real_triangle_geometry) ... ok
+test_glbs_fit_configured_anchors_after_scaling (test_project_integrity.GLBTests.test_glbs_fit_configured_anchors_after_scaling) ... ok
+test_entrypoint_and_architecture (test_project_integrity.ProjectTests.test_entrypoint_and_architecture) ... ok
+test_ia_fallback_and_separate_backend (test_project_integrity.ProjectTests.test_ia_fallback_and_separate_backend) ... ok
+test_mobile_header_and_visual_corrections (test_project_integrity.ProjectTests.test_mobile_header_and_visual_corrections) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.198s
+
+OK

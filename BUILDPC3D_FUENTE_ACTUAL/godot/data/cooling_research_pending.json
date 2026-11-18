@@ -1,0 +1,12 @@
+{
+  "status": "investigacion_no_integrada",
+  "note": "Sin precios, matriz por placa ni validación térmica completa. No son componentes seleccionables.",
+  "candidates": [
+    {"id":"cooler_noctua_nh_l9a_am4","name":"Noctua NH-L9a-AM4","cooling_type":"air","sockets":["AM4"],"height_mm":37,"source":"https://noctua.at/en/nh-l9a-am4/specification","restriction":"No recomendado para cargas térmicas altas; consultar compatibilidad CPU."},
+    {"id":"cooler_noctua_nh_l9i_17xx","name":"Noctua NH-L9i-17xx","cooling_type":"air","sockets":["LGA1700"],"height_mm":37,"source":"https://noctua.at/en/nh-l9i-17xx/specification","restriction":"No recomendado para cargas térmicas altas; consultar compatibilidad CPU."},
+    {"id":"cooler_noctua_nh_u9s","name":"Noctua NH-U9S","cooling_type":"air","sockets":["AM4","AM5","LGA1700"],"height_mm":125,"source":"https://www.noctua.at/en/products/nh-u9s/specifications","restriction":"Algunas placas AMD tienen restricciones RAM; comprobar kit y placa."},
+    {"id":"cooler_noctua_nh_u12s_redux","name":"Noctua NH-U12S redux","cooling_type":"air","sockets":["AM4","AM5","LGA1700"],"height_mm":158,"source":"https://www.noctua.at/en/products/nh-u12s-redux/specifications","restriction":"Comprobar placa, kit y altura de chasis."},
+    {"id":"cooler_noctua_nh_d12l","name":"Noctua NH-D12L","cooling_type":"air","sockets":["AM4","AM5","LGA1700"],"height_mm":145,"source":"https://noctua.at/en/products/cpu-cooler-retail/nh-d12l/specification","restriction":"Con ventilador incluido; un segundo ventilador puede aumentar altura e interferir con RAM."},
+    {"id":"cooler_noctua_nh_u12a","name":"Noctua NH-U12A","cooling_type":"air","sockets":["AM4","AM5","LGA1700"],"height_mm":158,"source":"https://www.noctua.at/en/products/nh-u12a","restriction":"Comprobar placa, kit y altura de chasis."}
+  ]
+}

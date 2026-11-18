@@ -1,0 +1,43 @@
+﻿tipo,id,nombre,marca,precio_cop,estado_precio,url_precio,ruta_modelo_glb,modelo3D_id_original
+cpu,cpu_amd_ryzen_5_5600g,AMD Ryzen 5 5600G,AMD,699000,oferta_web_consultada_2026_11_16,https://pcmastersbogota.com.co/tienda/?filter_category=pre-armados%2Cfuentes-de-poder%2Ctarjetas-graficas%2Cchasis%2Cprocesadores,res://assets/models/cpu_amd_ryzen_5_5600g.glb,cpu_am4_model
+cpu,cpu_amd_ryzen_5_5600,AMD Ryzen 5 5600,AMD,540000,referencia_del_archivo_sin_verificar,,res://assets/models/cpu_amd_ryzen_5_5600.glb,cpu_am4_model
+cpu,cpu_amd_ryzen_7_5700x,AMD Ryzen 7 5700X,AMD,740000,referencia_del_archivo_sin_verificar,,res://assets/models/cpu_amd_ryzen_7_5700x.glb,cpu_am4_model
+cpu,cpu_amd_ryzen_5_7600,AMD Ryzen 5 7600,AMD,880000,referencia_del_archivo_sin_verificar,,res://assets/models/cpu_amd_ryzen_5_7600.glb,cpu_am5_model
+cpu,cpu_amd_ryzen_7_7800x3d,AMD Ryzen 7 7800X3D,AMD,1699000,oferta_web_consultada_2026_11_16,https://pcmastersbogota.com.co/tienda/?filter_category=board%2Cprocesadores%2Cchasis%2Cmonitores,res://assets/models/cpu_amd_ryzen_7_7800x3d.glb,cpu_am5_model
+cpu,cpu_intel_core_i3_12100f,Intel Core i3-12100F,Intel,390000,referencia_del_archivo_sin_verificar,,res://assets/models/cpu_intel_core_i3_12100f.glb,cpu_lga1700_model
+cpu,cpu_intel_core_i5_12400f,Intel Core i5-12400F,Intel,580000,referencia_del_archivo_sin_verificar,,res://assets/models/cpu_intel_core_i5_12400f.glb,cpu_lga1700_model
+cpu,cpu_intel_core_i7_14700k,Intel Core i7-14700K,Intel,1980000,referencia_del_archivo_sin_verificar,,res://assets/models/cpu_intel_core_i7_14700k.glb,cpu_lga1700_model
+motherboard,motherboard_gigabyte_a520m_s2h,Gigabyte A520M S2H,Gigabyte,270000,referencia_del_archivo_sin_verificar,,res://assets/models/motherboard_gigabyte_a520m_s2h.glb,mobo_matx_model
+motherboard,motherboard_asus_prime_b550m_a_wifi_ii,ASUS Prime B550M-A WiFi II,ASUS,470000,referencia_del_archivo_sin_verificar,,res://assets/models/motherboard_asus_prime_b550m_a_wifi_ii.glb,mobo_matx_model
+motherboard,motherboard_msi_mag_b550_tomahawk,MSI MAG B550 Tomahawk,MSI,750000,referencia_del_archivo_sin_verificar,,res://assets/models/motherboard_msi_mag_b550_tomahawk.glb,mobo_atx_model
+motherboard,motherboard_asrock_a620m_hdv_m_2,ASRock A620M-HDV/M.2,ASRock,430000,referencia_del_archivo_sin_verificar,,res://assets/models/motherboard_asrock_a620m_hdv_m_2.glb,mobo_am5_model
+motherboard,motherboard_msi_pro_b650m_p,MSI PRO B650M-P,MSI,640000,referencia_del_archivo_sin_verificar,,res://assets/models/motherboard_msi_pro_b650m_p.glb,mobo_am5_model
+motherboard,motherboard_gigabyte_b650_gaming_x_ax,Gigabyte B650 Gaming X AX,Gigabyte,890000,referencia_del_archivo_sin_verificar,,res://assets/models/motherboard_gigabyte_b650_gaming_x_ax.glb,mobo_am5_model
+motherboard,motherboard_asus_prime_b660m_a_d4,ASUS Prime B660M-A D4,ASUS,520000,referencia_del_archivo_sin_verificar,,res://assets/models/motherboard_asus_prime_b660m_a_d4.glb,mobo_intel_model
+motherboard,motherboard_gigabyte_b760m_ds3h_ax_d4,Gigabyte B760M DS3H AX D4,Gigabyte,620000,referencia_del_archivo_sin_verificar,,res://assets/models/motherboard_gigabyte_b760m_ds3h_ax_d4.glb,mobo_intel_model
+gpu,gpu_nvidia_gt_1030_2gb,NVIDIA GT 1030 2GB,NVIDIA,310000,referencia_del_archivo_sin_verificar,,res://assets/models/gpu_nvidia_gt_1030_2gb.glb,gpu_gt1030_model
+gpu,gpu_nvidia_gtx_1650_4gb,NVIDIA GTX 1650 4GB,NVIDIA,620000,referencia_del_archivo_sin_verificar,,res://assets/models/gpu_nvidia_gtx_1650_4gb.glb,gpu_gtx1650_model
+gpu,gpu_amd_radeon_rx_6600_8gb,AMD Radeon RX 6600 8GB,AMD,1150000,referencia_del_archivo_sin_verificar,,res://assets/models/gpu_amd_radeon_rx_6600_8gb.glb,gpu_rx6600_model
+gpu,gpu_amd_radeon_rx_7600_8gb,AMD Radeon RX 7600 8GB,AMD,1290000,referencia_del_archivo_sin_verificar,,res://assets/models/gpu_amd_radeon_rx_7600_8gb.glb,gpu_rx7600_model
+gpu,gpu_nvidia_rtx_3060_12gb,NVIDIA RTX 3060 12GB,NVIDIA,1380000,referencia_del_archivo_sin_verificar,,res://assets/models/gpu_nvidia_rtx_3060_12gb.glb,gpu_rtx3060_model
+gpu,gpu_nvidia_rtx_4060_8gb,NVIDIA RTX 4060 8GB,NVIDIA,1490000,referencia_del_archivo_sin_verificar,,res://assets/models/gpu_nvidia_rtx_4060_8gb.glb,gpu_rtx4060_model
+gpu,gpu_nvidia_rtx_4070_super_12gb,NVIDIA RTX 4070 Super 12GB,NVIDIA,2980000,referencia_del_archivo_sin_verificar,,res://assets/models/gpu_nvidia_rtx_4070_super_12gb.glb,gpu_rtx4070s_model
+gpu,gpu_amd_radeon_rx_7800_xt_16gb,AMD Radeon RX 7800 XT 16GB,AMD,2690000,referencia_del_archivo_sin_verificar,,res://assets/models/gpu_amd_radeon_rx_7800_xt_16gb.glb,gpu_rx7800xt_model
+ram,ram_kingston_fury_beast_8gb_ddr4_2666mhz,Kingston Fury Beast 8GB DDR4 2666MHz,Kingston,85000,referencia_del_archivo_sin_verificar,,res://assets/models/ram_kingston_fury_beast_8gb_ddr4_2666mhz.glb,ram_ddr4_model
+ram,ram_kingston_fury_beast_16gb_2x8_ddr4_3200mhz,Kingston Fury Beast 16GB (2x8) DDR4 3200MHz,Kingston,175000,referencia_del_archivo_sin_verificar,,res://assets/models/ram_kingston_fury_beast_16gb_2x8_ddr4_3200mhz.glb,ram_ddr4_model
+ram,ram_corsair_vengeance_rgb_pro_16gb_2x8_ddr4_3600mhz,Corsair Vengeance RGB Pro 16GB (2x8) DDR4 3600MHz,Corsair,245000,referencia_del_archivo_sin_verificar,,res://assets/models/ram_corsair_vengeance_rgb_pro_16gb_2x8_ddr4_3600mhz.glb,ram_ddr4_model
+ram,ram_kingston_fury_beast_32gb_2x16_ddr4_3200mhz,Kingston Fury Beast 32GB (2x16) DDR4 3200MHz,Kingston,320000,referencia_del_archivo_sin_verificar,,res://assets/models/ram_kingston_fury_beast_32gb_2x16_ddr4_3200mhz.glb,ram_ddr4_model
+ram,ram_kingston_fury_beast_16gb_2x8_ddr5_5200mhz,Kingston Fury Beast 16GB (2x8) DDR5 5200MHz,Kingston,260000,referencia_del_archivo_sin_verificar,,res://assets/models/ram_kingston_fury_beast_16gb_2x8_ddr5_5200mhz.glb,ram_ddr5_model
+ram,ram_corsair_vengeance_32gb_2x16_ddr5_5600mhz,Corsair Vengeance 32GB (2x16) DDR5 5600MHz,Corsair,480000,referencia_del_archivo_sin_verificar,,res://assets/models/ram_corsair_vengeance_32gb_2x16_ddr5_5600mhz.glb,ram_ddr5_model
+ram,ram_teamgroup_t_force_delta_rgb_32gb_2x16_ddr5_6000mhz,Teamgroup T-Force Delta RGB 32GB (2x16) DDR5 6000MHz,Otro,580000,referencia_del_archivo_sin_verificar,,res://assets/models/ram_teamgroup_t_force_delta_rgb_32gb_2x16_ddr5_6000mhz.glb,ram_ddr5_model
+ram,ram_kingston_fury_renegade_rgb_32gb_2x16_ddr5_6400mhz,Kingston Fury Renegade RGB 32GB (2x16) DDR5 6400MHz,Kingston,620000,referencia_del_archivo_sin_verificar,,res://assets/models/ram_kingston_fury_renegade_rgb_32gb_2x16_ddr5_6400mhz.glb,ram_ddr5_model
+psu,psu_thermaltake_smart_500w_80_white,Thermaltake Smart 500W 80+ White,Thermaltake,190000,referencia_del_archivo_sin_verificar,,res://assets/models/psu_thermaltake_smart_500w_80_white.glb,psu_model
+psu,psu_corsair_cv550_550w_80_bronze,Corsair CV550 550W 80+ Bronze,Corsair,245000,referencia_del_archivo_sin_verificar,,res://assets/models/psu_corsair_cv550_550w_80_bronze.glb,psu_model
+psu,psu_msi_mag_a650bn_650w_80_bronze,MSI MAG A650BN 650W 80+ Bronze,MSI,318885,oferta_web_consultada_2026_11_16,https://chatgpt.com/?hints=search&q=MSI+MAG+A650BN+Fuente+de+Poder+650W+80+PLUS+Bronze+ATX,res://assets/models/psu_msi_mag_a650bn_650w_80_bronze.glb,psu_model
+psu,psu_corsair_rm750e_750w_80_gold_atx_3_0,Corsair RM750e 750W 80+ Gold ATX 3.0,Corsair,520000,referencia_del_archivo_sin_verificar,,res://assets/models/psu_corsair_rm750e_750w_80_gold_atx_3_0.glb,psu_model
+psu,psu_msi_mag_a850gl_850w_80_gold_atx_3_0,MSI MAG A850GL 850W 80+ Gold ATX 3.0,MSI,610000,referencia_del_archivo_sin_verificar,,res://assets/models/psu_msi_mag_a850gl_850w_80_gold_atx_3_0.glb,psu_model
+case,case_chasis_iceberg_basic_matx,Chasis Iceberg Basic mATX,Iceberg,120000,referencia_del_archivo_sin_verificar,,res://assets/models/case_chasis_iceberg_basic_matx.glb,case_matx_model
+case,case_chasis_aerocool_cs_107_matx_mesh,Chasis Aerocool CS-107 mATX Mesh,Aerocool,165000,referencia_del_archivo_sin_verificar,,res://assets/models/case_chasis_aerocool_cs_107_matx_mesh.glb,case_matx_model
+case,case_chasis_corsair_4000d_airflow_mid_tower,Chasis Corsair 4000D Airflow Mid Tower,Corsair,495000,oferta_web_consultada_2026_11_16,https://pcmastersbogota.com.co/tienda/?filter_category=pre-armados%2Cfuentes-de-poder%2Ctarjetas-graficas%2Cchasis%2Cprocesadores,res://assets/models/case_chasis_corsair_4000d_airflow_mid_tower.glb,case_mid_tower_model
+case,case_chasis_nzxt_h5_flow_rgb_mid_tower,Chasis NZXT H5 Flow RGB Mid Tower,NZXT,480000,referencia_del_archivo_sin_verificar,,res://assets/models/case_chasis_nzxt_h5_flow_rgb_mid_tower.glb,case_mid_tower_model
+case,case_chasis_lian_li_lancool_216_mesh,Chasis Lian Li LANCOOL 216 Mesh,Lian Li,520000,referencia_del_archivo_sin_verificar,,res://assets/models/case_chasis_lian_li_lancool_216_mesh.glb,case_mid_tower_model

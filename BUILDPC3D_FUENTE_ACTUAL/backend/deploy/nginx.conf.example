@@ -1,0 +1,29 @@
+# Sustituir api.example.com tras configurar DNS. Certificados con Certbot.
+# Ubicar la zona en el contexto http de nginx, no dentro de server.
+limit_req_zone $binary_remote_addr zone=bpc_ip:10m rate=10r/m;
+limit_conn_zone $binary_remote_addr zone=bpc_conn:10m;
+limit_conn_zone $server_name zone=bpc_total:1m;
+server {
+    listen 443 ssl;
+    server_name api.example.com;
+    ssl_certificate /etc/letsencrypt/live/api.example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/api.example.com/privkey.pem;
+    client_max_body_size 8k;
+    client_body_timeout 10s;
+    limit_req zone=bpc_ip burst=10 nodelay;
+    limit_req_status 429;
+    limit_conn bpc_conn 2;
+    limit_conn bpc_total 4;
+    limit_conn_status 429;
+    access_log off;
+    location = /interpretar {
+        proxy_pass http://unix:/run/buildpc3d/api.sock;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Real-IP "";
+        proxy_connect_timeout 3s;
+        proxy_read_timeout 25s;
+    }
+    location / { return 404; }
+}

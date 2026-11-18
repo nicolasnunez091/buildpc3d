@@ -1,0 +1,21 @@
+BUILDPC3D - modelos genericos detallados
+
+Los seis GLB de esta carpeta son derivados de modelos originales de Innerscene,
+ofrecidos por su autor bajo CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/
+Condiciones de la biblioteca: https://www.innerscene.com/tools/library/terms
+
+gabinete.glb: https://www.innerscene.com/tools/library/3d-parts/closed-mid-tower-pc-case-1374583e
+placa.glb: https://www.innerscene.com/tools/library/3d-parts/atx-motherboard-7794769f
+gpu.glb: https://www.innerscene.com/tools/library/3d-parts/graphics-card-with-fans-6af50057
+ram.glb: https://www.innerscene.com/tools/library/3d-parts/ddr5-ram-stick-376e4682
+fuente.glb: https://www.innerscene.com/tools/library/3d-parts/atx-power-supply-675d6448
+cpu_refrigerador.glb: https://www.innerscene.com/tools/library/3d-parts/cpu-with-cooler-6590ab40
+
+Estas piezas son genericas y no son replicas de los modelos del catalogo.
+Las texturas fueron reducidas para el prototipo movil; no se redujo geometria.
+El visor oculta lateral y cubierta de fuente para mostrar el interior, oculta
+una etiqueta de 750 W generica y muestra el vataje del producto seleccionado.
+El refrigerador es solo una referencia visual y no se suma al precio.
+
+Consulta docs/VISOR_3D_REALISMO.md para detalles tecnicos y limitaciones.

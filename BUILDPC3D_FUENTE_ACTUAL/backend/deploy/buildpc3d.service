@@ -1,0 +1,27 @@
+[Unit]
+Description=BUILDPC3D production API
+After=network-online.target redis-server.service
+Wants=network-online.target
+Requires=redis-server.service
+
+[Service]
+Type=exec
+User=buildpc3d
+Group=www-data
+SupplementaryGroups=redis
+WorkingDirectory=/opt/buildpc3d/backend
+EnvironmentFile=/etc/buildpc3d/backend.env
+RuntimeDirectory=buildpc3d
+RuntimeDirectoryMode=0750
+UMask=0007
+ExecStart=/opt/buildpc3d/venv/bin/gunicorn --bind unix:/run/buildpc3d/api.sock --workers 2 --threads 2 --timeout 30 --graceful-timeout 30 --access-logfile /dev/null --error-logfile - wsgi:app
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

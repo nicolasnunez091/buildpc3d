@@ -1,0 +1,6 @@
+{
+  "firebase_project_id": "buildpc3d",
+  "ai_service_url": "http://127.0.0.1:8000/interpretar",
+  "ai_service_url_android": "https://buildpc3d-backend.onrender.com/interpretar",
+  "catalog_document": "catalog"
+}

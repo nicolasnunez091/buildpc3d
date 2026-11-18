@@ -1,0 +1,10 @@
+{
+  "cpu_amd_ryzen_5_5600g":{"boxed":"included","cooler":"AMD Wraith Stealth","source":"https://www.amd.com/en/products/processors/ecosystem/cpu-cooler-solutions.html"},
+  "cpu_amd_ryzen_5_5600":{"boxed":"included","cooler":"AMD Wraith Stealth","source":"https://www.amd.com/en/newsroom/press-releases/2022-3-15-amd-launches-the-ultimate-gaming-processor-brings.html"},
+  "cpu_amd_ryzen_7_5700x":{"boxed":"not_included","source":"https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-5000-series/amd-ryzen-7-5700x.html","note":"La página general de soluciones de AMD lo enumera contradictoriamente como incluido; se prioriza la ficha específica y el anuncio de lanzamiento."},
+  "cpu_amd_ryzen_5_7600":{"boxed":"included","cooler":"AMD Wraith Stealth","source":"https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600.html"},
+  "cpu_amd_ryzen_7_7800x3d":{"boxed":"not_included","source":"https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html"},
+  "cpu_intel_core_i3_12100f":{"boxed":"included","cooler":"Intel Laminar RM1","source":"https://www.intel.com/content/www/us/en/support/articles/000089627/processors.html"},
+  "cpu_intel_core_i5_12400f":{"boxed":"included","cooler":"Intel Laminar RM1","source":"https://www.intel.com/content/www/us/en/support/articles/000089627/processors.html"},
+  "cpu_intel_core_i7_14700k":{"boxed":"not_included","source":"https://www.intel.com/content/www/us/en/support/articles/000005940/processors.html"}
+}

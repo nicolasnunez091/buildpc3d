@@ -1,0 +1,30 @@
+{
+  "ssd": [
+    {"id":"ssd_crucial_bx500_480","type":"ssd","name":"Crucial BX500 480 GB (CT480BX500SSD1)","brand":"Crucial","capacity_gb":480,"interface":"sata","form_factor":"2.5","price_cop":160000,"price_status":"estimacion_no_verificada","source_url":"https://uk.crucial.com/ssd/bx500/ct480bx500ssd1"},
+    {"id":"ssd_crucial_p3_plus_500","type":"ssd","name":"Crucial P3 Plus 500 GB (CT500P3PSSD8)","brand":"Crucial","capacity_gb":500,"interface":"nvme_pcie","form_factor":"m2_2280","price_cop":200000,"price_status":"estimacion_no_verificada","source_url":"https://eu.crucial.com/products/ssd/crucial-p3-plus-ssd"},
+    {"id":"ssd_crucial_p3_plus_1000","type":"ssd","name":"Crucial P3 Plus 1 TB (CT1000P3PSSD8)","brand":"Crucial","capacity_gb":1000,"interface":"nvme_pcie","form_factor":"m2_2280","price_cop":300000,"price_status":"estimacion_no_verificada","source_url":"https://eu.crucial.com/products/ssd/crucial-p3-plus-ssd"},
+    {"id":"ssd_crucial_p3_plus_2000","type":"ssd","name":"Crucial P3 Plus 2 TB (CT2000P3PSSD8)","brand":"Crucial","capacity_gb":2000,"interface":"nvme_pcie","form_factor":"m2_2280","price_cop":550000,"price_status":"estimacion_no_verificada","source_url":"https://eu.crucial.com/products/ssd/crucial-p3-plus-ssd"},
+    {"id":"ssd_samsung_870_evo_1000","type":"ssd","name":"Samsung 870 EVO 1 TB (MZ-77E1T0BW)","brand":"Samsung","capacity_gb":1000,"interface":"sata","protocol":"SATA 6 Gb/s","form_factor":"2.5","price_cop":420000,"price_status":"estimacion_no_verificada","source_url":"https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_870_EVO_Data_Sheet_Rev1.1_230509_10129500071091.pdf"},
+    {"id":"ssd_samsung_870_evo_2000","type":"ssd","name":"Samsung 870 EVO 2 TB (MZ-77E2T0BW)","brand":"Samsung","capacity_gb":2000,"interface":"sata","protocol":"SATA 6 Gb/s","form_factor":"2.5","price_cop":750000,"price_status":"estimacion_no_verificada","source_url":"https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_870_EVO_Data_Sheet_Rev1.1_230509_10129500071091.pdf"},
+    {"id":"ssd_kingston_nv3_1000","type":"ssd","name":"Kingston NV3 1 TB (SNV3S/1000G)","brand":"Kingston","capacity_gb":1000,"interface":"nvme_pcie","protocol":"NVMe","pcie_generation":4,"pcie_lanes":4,"form_factor":"m2_2280","price_cop":290000,"price_status":"estimacion_no_verificada","source_url":"https://www.kingston.com/en/memory/search?partid=SNV3S/1000G"},
+    {"id":"ssd_samsung_990_pro_1000","type":"ssd","name":"Samsung 990 PRO 1 TB (MZ-V9P1T0BW)","brand":"Samsung","capacity_gb":1000,"interface":"nvme_pcie","protocol":"NVMe 2.0","pcie_generation":4,"pcie_lanes":4,"form_factor":"m2_2280","price_cop":520000,"price_status":"estimacion_no_verificada","source_url":"https://download.semiconductor.samsung.com/resources/brochure/990_PRO_Series_Brouchure_Web_Version_4.0_250523.pdf"},
+    {"id":"ssd_samsung_990_pro_2000","type":"ssd","name":"Samsung 990 PRO 2 TB (MZ-V9P2T0BW)","brand":"Samsung","capacity_gb":2000,"interface":"nvme_pcie","protocol":"NVMe 2.0","pcie_generation":4,"pcie_lanes":4,"form_factor":"m2_2280","price_cop":850000,"price_status":"estimacion_no_verificada","source_url":"https://download.semiconductor.samsung.com/resources/brochure/990_PRO_Series_Brouchure_Web_Version_4.0_250523.pdf"},
+    {"id":"ssd_samsung_990_pro_4000","type":"ssd","name":"Samsung 990 PRO 4 TB (MZ-V9P4T0BW)","brand":"Samsung","capacity_gb":4000,"interface":"nvme_pcie","protocol":"NVMe 2.0","pcie_generation":4,"pcie_lanes":4,"form_factor":"m2_2280","price_cop":1700000,"price_status":"estimacion_no_verificada","source_url":"https://download.semiconductor.samsung.com/resources/brochure/990_PRO_Series_Brouchure_Web_Version_4.0_250523.pdf"}
+  ],
+  "cases": {
+    "case_chasis_aerocool_cs_107_matx_mesh":{"bay_25":true,"source":"https://aerocool.io/product/cs-107"},
+    "case_chasis_corsair_4000d_airflow_mid_tower":{"bay_25":true,"source":"https://www.corsair.com/us/en/p/pc-cases/cc-9011200-ww/4000d-airflow-tempered-glass-mid-tower-atx-case-black-cc-9011200-ww"},
+    "case_chasis_nzxt_h5_flow_rgb_mid_tower":{"bay_25":true,"source":"https://nzxt.com/products/h5-flow-rgb-2023-case"},
+    "case_chasis_lian_li_lancool_216_mesh":{"bay_25":true,"source":"https://lian-li.com/product/lancool-216/"}
+  },
+  "motherboards": {
+    "motherboard_gigabyte_a520m_s2h":{"sata":true,"nvme_m2_2280":true,"source":"https://www.gigabyte.com/Motherboard/A520M-S2H-rev-1x/sp"},
+    "motherboard_asus_prime_b550m_a_wifi_ii":{"sata":true,"nvme_m2_2280":true,"source":"https://www.asus.com/motherboards-components/motherboards/prime/prime-b550m-a-wifi-ii/techspec/"},
+    "motherboard_msi_mag_b550_tomahawk":{"sata":true,"nvme_m2_2280":true,"source":"https://www.msi.com/Motherboard/MAG-B550-TOMAHAWK/Specification"},
+    "motherboard_asrock_a620m_hdv_m_2":{"sata":true,"nvme_m2_2280":true,"source":"https://tw.asrock.com/MB/AMD/A620M-HDVM.2/index.asp"},
+    "motherboard_msi_pro_b650m_p":{"sata":true,"nvme_m2_2280":true,"source":"https://www.msi.com/Motherboard/PRO-B650M-P/Specification"},
+    "motherboard_gigabyte_b650_gaming_x_ax":{"sata":true,"nvme_m2_2280":true,"source":"https://www.gigabyte.com/Motherboard/B650-GAMING-X-AX-rev-10-11-12/sp"},
+    "motherboard_asus_prime_b660m_a_d4":{"sata":true,"nvme_m2_2280":true,"source":"https://www.asus.com/motherboards-components/motherboards/prime/prime-b660m-a-d4/techspec/"},
+    "motherboard_gigabyte_b760m_ds3h_ax_d4":{"sata":true,"nvme_m2_2280":true,"source":"https://download.gigabyte.com/FileList/Manual/mb_manual_b760m-ds3h-series_1304_e.pdf"}
+  }
+}

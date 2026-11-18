@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "productos": {
+    "cpu_amd_ryzen_5_5600g": {
+      "categoria": "cpu",
+      "modelo": "res://assets/models/realismo_cc0/cpu_refrigerador.glb",
+      "acabado": "d7dce4",
+      "variante": 0,
+      "precision": "aproximada"
+    },
+    "cpu_amd_ryzen_5_5600": {
+      "categoria": "cpu",
+      "modelo": "res://assets/models/realismo_cc0/cpu_refrigerador.glb",
+      "acabado": "b7c3d2",
+      "variante": 1,
+      "precision": "aproximada"
+    },
+    "cpu_amd_ryzen_7_5700x": {
+      "categoria": "cpu",
+      "modelo": "res://assets/models/realismo_cc0/cpu_refrigerador.glb",
+      "acabado": "e1d8d2",
+      "variante": 2,
+      "precision": "aproximada"
+    },
+    "cpu_amd_ryzen_5_7600": {
+      "categoria": "cpu",
+      "modelo": "res://assets/models/realismo_cc0/cpu_refrigerador.glb",
+      "acabado": "d6d8e0",
+      "variante": 3,
+      "precision": "aproximada"
+    },
+    "cpu_amd_ryzen_7_7800x3d": {
+      "categoria": "cpu",
+      "modelo": "res://assets/models/realismo_cc0/cpu_refrigerador.glb",
+      "acabado": "e9cbd2",
+      "variante": 4,
+      "precision": "aproximada"
+    },
+    "cpu_intel_core_i3_12100f": {
+      "categoria": "cpu",
+      "modelo": "res://assets/models/realismo_cc0/cpu_refrigerador.glb",
+      "acabado": "b5cad8",
+      "variante": 5,
+      "precision": "aproximada"
+    },
+    "cpu_intel_core_i5_12400f": {
+      "categoria": "cpu",
+      "modelo": "res://assets/models/realismo_cc0/cpu_refrigerador.glb",
+      "acabado": "c8c7d9",
+      "variante": 6,
+      "precision": "aproximada"
+    },
+    "cpu_intel_core_i7_14700k": {
+      "categoria": "cpu",
+      "modelo": "res://assets/models/realismo_cc0/cpu_refrigerador.glb",
+      "acabado": "e7d3bf",
+      "variante": 7,
+      "precision": "aproximada"
+    },
+    "motherboard_gigabyte_a520m_s2h": {
+      "categoria": "motherboard",
+      "modelo": "res://assets/models/realismo_cc0/placa.glb",
+      "acabado": "b7c8ca",
+      "variante": 0,
+      "precision": "aproximada"
+    },
+    "motherboard_asus_prime_b550m_a_wifi_ii": {
+      "categoria": "motherboard",
+      "modelo": "res://assets/models/realismo_cc0/placa.glb",
+      "acabado": "e1e0df",
+      "variante": 1,
+      "precision": "aproximada"
+    },
+    "motherboard_msi_mag_b550_tomahawk": {
+      "categoria": "motherboard",
+      "modelo": "res://assets/models/realismo_cc0/placa.glb",
+      "acabado": "bbbcc2",
+      "variante": 2,
+      "precision": "aproximada"
+    },
+    "motherboard_asrock_a620m_hdv_m_2": {
+      "categoria": "motherboard",
+      "modelo": "res://assets/models/realismo_cc0/placa.glb",
+      "acabado": "c5d1c4",
+      "variante": 3,
+      "precision": "aproximada"
+    },
+    "motherboard_msi_pro_b650m_p": {
+      "categoria": "motherboard",
+      "modelo": "res://assets/models/realismo_cc0/placa.glb",
+      "acabado": "c3c9d4",
+      "variante": 4,
+      "precision": "aproximada"
+    },
+    "motherboard_gigabyte_b650_gaming_x_ax": {
+      "categoria": "motherboard",
+      "modelo": "res://assets/models/realismo_cc0/placa.glb",
+      "acabado": "b1c6dc",
+      "variante": 5,
+      "precision": "aproximada"
+    },
+    "motherboard_asus_prime_b660m_a_d4": {
+      "categoria": "motherboard",
+      "modelo": "res://assets/models/realismo_cc0/placa.glb",
+      "acabado": "e0d6cc",
+      "variante": 6,
+      "precision": "aproximada"
+    },
+    "motherboard_gigabyte_b760m_ds3h_ax_d4": {
+      "categoria": "motherboard",
+      "modelo": "res://assets/models/realismo_cc0/placa.glb",
+      "acabado": "d4c5dc",
+      "variante": 7,
+      "precision": "aproximada"
+    },
+    "gpu_nvidia_gt_1030_2gb": {
+      "categoria": "gpu",
+      "modelo": "res://assets/models/realismo_cc0/gpu.glb",
+      "acabado": "aeb8c2",
+      "variante": 0,
+      "precision": "aproximada",
+      "longitud_mm": 155,
+      "ventiladores": 1
+    },
+    "gpu_nvidia_gtx_1650_4gb": {
+      "categoria": "gpu",
+      "modelo": "res://assets/models/realismo_cc0/gpu.glb",
+      "acabado": "c5c6cd",
+      "variante": 1,
+      "precision": "aproximada",
+      "longitud_mm": 225,
+      "ventiladores": 2
+    },
+    "gpu_amd_radeon_rx_6600_8gb": {
+      "categoria": "gpu",
+      "modelo": "res://assets/models/realismo_cc0/gpu.glb",
+      "acabado": "c1b9ba",
+      "variante": 2,
+      "precision": "aproximada",
+      "longitud_mm": 255,
+      "ventiladores": 2
+    },
+    "gpu_amd_radeon_rx_7600_8gb": {
+      "categoria": "gpu",
+      "modelo": "res://assets/models/realismo_cc0/gpu.glb",
+      "acabado": "d4bdba",
+      "variante": 3,
+      "precision": "aproximada",
+      "longitud_mm": 270,
+      "ventiladores": 2
+    },
+    "gpu_nvidia_rtx_3060_12gb": {
+      "categoria": "gpu",
+      "modelo": "res://assets/models/realismo_cc0/gpu.glb",
+      "acabado": "bbc3d0",
+      "variante": 4,
+      "precision": "aproximada",
+      "longitud_mm": 300,
+      "ventiladores": 3
+    },
+    "gpu_nvidia_rtx_4060_8gb": {
+      "categoria": "gpu",
+      "modelo": "res://assets/models/realismo_cc0/gpu.glb",
+      "acabado": "d3d5d8",
+      "variante": 5,
+      "precision": "aproximada",
+      "longitud_mm": 265,
+      "ventiladores": 2
+    },
+    "gpu_nvidia_rtx_4070_super_12gb": {
+      "categoria": "gpu",
+      "modelo": "res://assets/models/realismo_cc0/gpu.glb",
+      "acabado": "ded7cd",
+      "variante": 6,
+      "precision": "aproximada",
+      "longitud_mm": 310,
+      "ventiladores": 3
+    },
+    "gpu_amd_radeon_rx_7800_xt_16gb": {
+      "categoria": "gpu",
+      "modelo": "res://assets/models/realismo_cc0/gpu.glb",
+      "acabado": "d8b9bd",
+      "variante": 7,
+      "precision": "aproximada",
+      "longitud_mm": 320,
+      "ventiladores": 3
+    },
+    "ram_kingston_fury_beast_8gb_ddr4_2666mhz": {
+      "categoria": "ram",
+      "modelo": "res://assets/models/realismo_cc0/ram.glb",
+      "acabado": "b0b9c4",
+      "variante": 0,
+      "precision": "aproximada",
+      "iluminacion": false
+    },
+    "ram_kingston_fury_beast_16gb_2x8_ddr4_3200mhz": {
+      "categoria": "ram",
+      "modelo": "res://assets/models/realismo_cc0/ram.glb",
+      "acabado": "d3d5d9",
+      "variante": 1,
+      "precision": "aproximada",
+      "iluminacion": false
+    },
+    "ram_corsair_vengeance_rgb_pro_16gb_2x8_ddr4_3600mhz": {
+      "categoria": "ram",
+      "modelo": "res://assets/models/realismo_cc0/ram.glb",
+      "acabado": "dfdce4",
+      "variante": 2,
+      "precision": "aproximada",
+      "iluminacion": true
+    },
+    "ram_kingston_fury_beast_32gb_2x16_ddr4_3200mhz": {
+      "categoria": "ram",
+      "modelo": "res://assets/models/realismo_cc0/ram.glb",
+      "acabado": "c3c7d0",
+      "variante": 3,
+      "precision": "aproximada",
+      "iluminacion": false
+    },
+    "ram_kingston_fury_beast_16gb_2x8_ddr5_5200mhz": {
+      "categoria": "ram",
+      "modelo": "res://assets/models/realismo_cc0/ram.glb",
+      "acabado": "b4c9d0",
+      "variante": 4,
+      "precision": "aproximada",
+      "iluminacion": false
+    },
+    "ram_corsair_vengeance_32gb_2x16_ddr5_5600mhz": {
+      "categoria": "ram",
+      "modelo": "res://assets/models/realismo_cc0/ram.glb",
+      "acabado": "e0dfd9",
+      "variante": 5,
+      "precision": "aproximada",
+      "iluminacion": false
+    },
+    "ram_teamgroup_t_force_delta_rgb_32gb_2x16_ddr5_6000mhz": {
+      "categoria": "ram",
+      "modelo": "res://assets/models/realismo_cc0/ram.glb",
+      "acabado": "c9d3db",
+      "variante": 6,
+      "precision": "aproximada",
+      "iluminacion": true
+    },
+    "ram_kingston_fury_renegade_rgb_32gb_2x16_ddr5_6400mhz": {
+      "categoria": "ram",
+      "modelo": "res://assets/models/realismo_cc0/ram.glb",
+      "acabado": "dad0dc",
+      "variante": 7,
+      "precision": "aproximada",
+      "iluminacion": true
+    },
+    "psu_thermaltake_smart_500w_80_white": {
+      "categoria": "psu",
+      "modelo": "res://assets/models/realismo_cc0/fuente.glb",
+      "acabado": "adb7c3",
+      "variante": 0,
+      "precision": "aproximada"
+    },
+    "psu_corsair_cv550_550w_80_bronze": {
+      "categoria": "psu",
+      "modelo": "res://assets/models/realismo_cc0/fuente.glb",
+      "acabado": "c3c8cf",
+      "variante": 1,
+      "precision": "aproximada"
+    },
+    "psu_msi_mag_a650bn_650w_80_bronze": {
+      "categoria": "psu",
+      "modelo": "res://assets/models/realismo_cc0/fuente.glb",
+      "acabado": "b7bdc9",
+      "variante": 2,
+      "precision": "aproximada"
+    },
+    "psu_corsair_rm750e_750w_80_gold_atx_3_0": {
+      "categoria": "psu",
+      "modelo": "res://assets/models/realismo_cc0/fuente.glb",
+      "acabado": "d6d7d6",
+      "variante": 3,
+      "precision": "aproximada"
+    },
+    "psu_msi_mag_a850gl_850w_80_gold_atx_3_0": {
+      "categoria": "psu",
+      "modelo": "res://assets/models/realismo_cc0/fuente.glb",
+      "acabado": "cbd0d9",
+      "variante": 4,
+      "precision": "aproximada"
+    },
+    "case_chasis_iceberg_basic_matx": {
+      "categoria": "case",
+      "modelo": "res://assets/models/realismo_cc0/gabinete.glb",
+      "acabado": "aeb8c2",
+      "variante": 0,
+      "precision": "aproximada",
+      "ventiladores_frontales": 1
+    },
+    "case_chasis_aerocool_cs_107_matx_mesh": {
+      "categoria": "case",
+      "modelo": "res://assets/models/realismo_cc0/gabinete.glb",
+      "acabado": "c2c8cf",
+      "variante": 1,
+      "precision": "aproximada",
+      "ventiladores_frontales": 2
+    },
+    "case_chasis_corsair_4000d_airflow_mid_tower": {
+      "categoria": "case",
+      "modelo": "res://assets/models/realismo_cc0/gabinete.glb",
+      "acabado": "dad8d3",
+      "variante": 2,
+      "precision": "aproximada",
+      "ventiladores_frontales": 2
+    },
+    "case_chasis_nzxt_h5_flow_rgb_mid_tower": {
+      "categoria": "case",
+      "modelo": "res://assets/models/realismo_cc0/gabinete.glb",
+      "acabado": "c4cbd7",
+      "variante": 3,
+      "precision": "aproximada",
+      "ventiladores_frontales": 2
+    },
+    "case_chasis_lian_li_lancool_216_mesh": {
+      "categoria": "case",
+      "modelo": "res://assets/models/realismo_cc0/gabinete.glb",
+      "acabado": "d9cec5",
+      "variante": 4,
+      "precision": "aproximada",
+      "ventiladores_frontales": 3
+    }
+  }
+}

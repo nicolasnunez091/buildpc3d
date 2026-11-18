@@ -1,0 +1,10 @@
+BUILDPC3D v3: carpeta con 42 modelos GLB originales (MVP referencial).
+
+Cada componente del catalogo tiene una ruta model3d_path individual.
+Estos archivos contienen mallas, etiquetas y componentes con detalles visibles;
+no corresponden a copias CAD exactas ni a archivos descargados de Sketchfab.
+
+Para descargar modelos CC0 por Internet opcionalmente:
+  python tools/instalar_modelos_cc0.py --aplicar-mvp
+
+Ver docs/GLB_Y_LICENCIAS.md y docs/MANIFIESTO_GLB.json.

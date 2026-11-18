@@ -1,0 +1,15 @@
+test_empty_phrase (test_backend.ClassifierTests.test_empty_phrase) ... ok
+test_groq_json_structure (test_backend.ClassifierTests.test_groq_json_structure) ... ok
+test_invalid_usage (test_backend.ClassifierTests.test_invalid_usage) ... ok
+test_malformed_json (test_backend.ClassifierTests.test_malformed_json) ... ok
+test_missing_api_key (test_backend.ClassifierTests.test_missing_api_key) ... ok
+test_valid_response (test_backend.ClassifierTests.test_valid_response) ... ok
+test_health (test_backend.HTTPTests.test_health) ... 127.0.0.1 - - [16/Nov/2026 20:06:43] "GET /health HTTP/1.1" 200 -
+ok
+test_request_missing_key_fallback (test_backend.HTTPTests.test_request_missing_key_fallback) ... 127.0.0.1 - - [16/Nov/2026 20:06:43] "POST /interpretar HTTP/1.1" 503 -
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.520s
+
+OK
