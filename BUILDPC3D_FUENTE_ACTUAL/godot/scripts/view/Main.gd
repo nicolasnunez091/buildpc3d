@@ -6,6 +6,7 @@ const DAOScript = preload("res://scripts/model/CatalogDAO.gd")
 const ViewerScript = preload("res://scripts/view/PCViewer.gd")
 const DemandAnalyzerScript = preload("res://scripts/model/DemandAnalyzer.gd")
 const CpuCoolingInfoScript = preload("res://scripts/model/CpuCoolingInfo.gd")
+const DragScrollScript = preload("res://scripts/view/DragScroll.gd")
 
 const BACK = Color("0d0b12")
 const CARD = Color("17121f")
@@ -33,6 +34,7 @@ var _description: TextEdit
 var _home_status: Label
 var _assembly_status: Label
 var _cooling_status: Label
+var _compatibility_status: Label
 var _catalog_status: Label
 var _total: Label
 var _balance: Label
@@ -51,15 +53,21 @@ var _generic_gpu_toggle: CheckBox
 var _detailed_view_toggle: CheckBox
 var _pending_generation: bool = false
 var _interpreted_text: String = ""
+var _request_text: String = ""
+var _rejected_text: String = ""
 var _interpretation_message: String = ""
 # Inyección opcional para pruebas locales; vacío usa la configuración instalada.
 var _ai_service_url_override: String = ""
 
 func _ready() -> void:
+	if OS.get_name() == "Android":
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	_controller = ControllerScript.new()
 	add_child(_controller)
 	_controller.ia_resuelta.connect(_on_ia_resuelta)
 	_build_ui()
+	get_viewport().size_changed.connect(_update_safe_area)
+	_update_safe_area.call_deferred()
 	_dao = DAOScript.new()
 	add_child(_dao)
 	_dao.catalogo_cargado.connect(_on_catalog_ready)
@@ -90,10 +98,33 @@ func _build_ui() -> void:
 	_dashboard.title = "BUILDPC3D / Ensamble final"
 	_dashboard.min_size = Vector2i(440, 520)
 	add_child(_dashboard)
+	_dashboard.visibility_changed.connect(func():
+		for page in _pages:
+			page.input_blocked = _dashboard.visible
+			page.cancel_drag()
+	)
 	_set_page(0)
 
+func _update_safe_area() -> void:
+	# El fondo cubre toda la pantalla; los controles respetan cámara y gestos
+	# del sistema. Convertir píxeles físicos a coordenadas lógicas del viewport.
+	if OS.get_name() != "Android":
+		return
+	var window_size = Vector2(DisplayServer.window_get_size())
+	if window_size.x <= 0.0 or window_size.y <= 0.0:
+		return
+	var safe = Rect2(DisplayServer.get_display_safe_area()).intersection(Rect2(Vector2.ZERO, window_size))
+	if not safe.has_area():
+		return
+	var scale_factor = get_viewport_rect().size / window_size
+	for page in _pages:
+		page.offset_left = safe.position.x * scale_factor.x
+		page.offset_top = safe.position.y * scale_factor.y
+		page.offset_right = -(window_size.x - safe.end.x) * scale_factor.x
+		page.offset_bottom = -(window_size.y - safe.end.y) * scale_factor.y
+
 func _new_page() -> VBoxContainer:
-	var scroll = ScrollContainer.new()
+	var scroll = DragScrollScript.new()
 	scroll.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll.follow_focus = true
@@ -122,7 +153,7 @@ func _build_home(column: VBoxContainer) -> void:
 	header.add_child(mark)
 	column.add_child(_separator())
 	column.add_child(_label("CONFIGURADOR DE HARDWARE 3D", 11, PINK))
-	column.add_child(_label("Diseño de Torre.\nCompatibilidad real.", 29, TEXT, true))
+	column.add_child(_label("Diseño de Torre.\nCompatibilidad orientativa.", 29, TEXT, true))
 	var input_panel = _panel()
 	column.add_child(input_panel)
 	var input_column = _stack(input_panel, 9)
@@ -133,7 +164,7 @@ func _build_home(column: VBoxContainer) -> void:
 	_description.mouse_filter = Control.MOUSE_FILTER_STOP
 	_description.virtual_keyboard_enabled = true
 	_description.virtual_keyboard_show_on_focus = true
-	_description.placeholder_text = "Escribe tu petición para pasarla por nuestros filtros..."
+	_description.placeholder_text = "Ej.: Necesito un PC para jugar Valorant y estudiar programación."
 	_description.custom_minimum_size.y = 113
 	_description.wrap_mode = TextEdit.LINE_WRAPPING_BOUNDARY
 	_description.add_theme_color_override("font_color", TEXT)
@@ -155,13 +186,13 @@ func _build_home(column: VBoxContainer) -> void:
 	_clear_use_button = _button("Quitar selección")
 	_clear_use_button.pressed.connect(_clear_manual_use)
 	input_column.add_child(_clear_use_button)
-	_ai_button = _button("Interpretar petición")
-	_ai_button.pressed.connect(_request_ai)
-	input_column.add_child(_ai_button)
 	_home_status = _label("Cargando catálogo de componentes...", 12, SUB)
 	_home_status.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	column.add_child(_home_status)
-	_fill_space(column, 105)
+	_fill_space(column, 24)
+	_ai_button = _button("Interpretar petición")
+	_ai_button.pressed.connect(_request_ai)
+	column.add_child(_ai_button)
 	_generate_button = _button("[ ANALIZAR Y GENERAR 3D ]", true)
 	_generate_button.custom_minimum_size.y = 59
 	_generate_button.pressed.connect(_generate)
@@ -182,12 +213,15 @@ func _build_assembly(column: VBoxContainer) -> void:
 	viewer_style.set_content_margin_all(14)
 	vpanel.add_theme_stylebox_override("panel", viewer_style)
 	var vbox = _stack(vpanel, 6)
-	vbox.add_child(_label("Gira · Pellizca para zoom · Toca una pieza", 12, SUB))
+	vbox.add_child(_label("Gira 360° · Pellizca para zoom · Toca una pieza", 12, SUB))
 	_viewer = ViewerScript.new()
 	_viewer.custom_minimum_size.y = 460
 	_viewer.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_viewer.pieza_seleccionada.connect(_on_part_selected)
 	vbox.add_child(_viewer)
+	var reset_view = _button("Restablecer vista")
+	reset_view.pressed.connect(_viewer.reset_camera)
+	vbox.add_child(reset_view)
 	_viewer_product = _label("", 12, TEXT)
 	_viewer_product.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	vbox.add_child(_viewer_product)
@@ -231,6 +265,9 @@ func _build_assembly(column: VBoxContainer) -> void:
 	_cooling_status = _label("", 12, TEXT)
 	_cooling_status.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	column.add_child(_cooling_status)
+	_compatibility_status = _label("", 12, TEXT)
+	_compatibility_status.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	column.add_child(_compatibility_status)
 	var dashboard = _button("[ VER DASHBOARD DEL EQUIPO FINAL ]", true)
 	dashboard.custom_minimum_size.y = 52
 	dashboard.pressed.connect(_show_dashboard)
@@ -313,6 +350,7 @@ func _clear_manual_use() -> void:
 		_home_status.text = "Selección manual quitada. Escribe una petición o elige un uso."
 
 func _on_description_changed() -> void:
+	_rejected_text = ""
 	_interpreted_text = ""
 	_recommended_use = ""
 	_recommended_message = ""
@@ -321,9 +359,10 @@ func _on_description_changed() -> void:
 		_interpretation_message = ""
 
 func _set_page(index: int) -> void:
-	# _pages stores root scroll nodes in the same order as the UI screens.
+	# Cada página conserva su contenedor de desplazamiento.
 	for i in range(_pages.size()):
 		var item: Control = _pages[i]
+		item.cancel_drag()
 		item.visible = i == index
 		if item is ScrollContainer:
 			(item as ScrollContainer).scroll_vertical = 0
@@ -348,6 +387,14 @@ func _request_ai() -> void:
 	_start_interpretation(false)
 
 func _start_interpretation(generate_after: bool) -> void:
+	if _controller._busy:
+		return
+	_request_text = _description.text.strip_edges()
+	_interpreted_text = ""
+	_recommended_use = ""
+	_recommended_message = ""
+	if _manual_use.is_empty():
+		_choose_use("")
 	_pending_generation = generate_after
 	_set_interpreting(true)
 	var data = JSON.parse_string(FileAccess.get_file_as_string("res://config/app_config.json"))
@@ -364,8 +411,14 @@ func _on_ia_resuelta(ok: bool, message: String, use: String) -> void:
 	var generate_after = _pending_generation
 	_pending_generation = false
 	_set_interpreting(false)
+	if not _request_text.is_empty() and _description.text.strip_edges() != _request_text:
+		_request_text = ""
+		_home_status.text = "La solicitud cambió. Interprétala de nuevo."
+		return
+	_request_text = ""
 	_home_status.text = message
 	if ok:
+		_rejected_text = ""
 		_interpreted_text = _description.text.strip_edges()
 		_recommended_use = use
 		_recommended_message = message
@@ -374,15 +427,26 @@ func _on_ia_resuelta(ok: bool, message: String, use: String) -> void:
 		_choose_use(use)
 		if generate_after:
 			_generate_selected()
+	else:
+		if _controller._last_source == "rechazado":
+			_rejected_text = _description.text.strip_edges()
+		if _manual_use.is_empty():
+			_choose_use("")
+			_interpretation_message = ""
 
 func _generate() -> void:
 	if _catalog.is_empty():
 		_home_status.text = "El catálogo todavía no está disponible."
 		return
 	var text = _description.text.strip_edges()
-	if not text.is_empty() and DemandAnalyzerScript.new().analyze(text)["portatil"]:
-		_home_status.text = "BUILDPC3D configura computadores de escritorio, no portátiles."
+	if not _rejected_text.is_empty() and text == _rejected_text:
+		_home_status.text = "La solicitud fue rechazada. Reformúlala antes de generar."
 		return
+	if not text.is_empty():
+		var validation = _controller.validate_request(text)
+		if not validation["ok"]:
+			_home_status.text = validation["message"]
+			return
 	if _manual_use.is_empty() and not text.is_empty() and text != _interpreted_text:
 		_start_interpretation(true)
 		return
@@ -420,7 +484,9 @@ func _refresh_equipment() -> void:
 		_viewer_product.text += "\nSSD: " + str(_equipment["ssd"].get("name", "")) + " · representación genérica"
 	var total: int = _controller.calcular_total()
 	_total.text = _money(total)
-	_balance.text = "✓ COMPATIBILIDAD ESTIMADA"
+	var pending = _controller._recommender.advertencias_compatibilidad(_equipment)
+	_balance.text = "COMPATIBILIDAD PENDIENTE" if not pending.is_empty() else "COMPATIBILIDAD PARCIAL"
+	_compatibility_status.text = "VERIFICAR: " + " ".join(pending) if not pending.is_empty() else "Compatibilidad parcial; verifica los componentes antes de comprar."
 	_cooling_status.text = "REFRIGERACIÓN: " + CpuCoolingInfoScript.new().message(_equipment.get("cpu", {}))
 	for child in _components_box.get_children():
 		child.queue_free()
@@ -476,6 +542,11 @@ func _refresh_candidates() -> void:
 func _select_candidate(candidate: Dictionary) -> void:
 	_selected_candidate = candidate.duplicate(true)
 	_catalog_status.text = "Elegida: " + str(candidate["name"])
+	var trial = _equipment.duplicate(true)
+	trial[_selected_part] = candidate
+	var pending = _controller._recommender.advertencias_compatibilidad(trial)
+	if not pending.is_empty():
+		_catalog_status.text += "\nPendiente de verificar: " + " ".join(pending)
 	_refresh_candidates()
 
 func _cancel_candidate() -> void:
@@ -506,6 +577,9 @@ func _show_dashboard() -> void:
 		info += str(FilterScript.LABELS[kind]) + ":\n" + str(part["name"]) + " · " + _money(int(part["price_cop"])) + "\n\n"
 	info += "TOTAL: " + _money(_controller.calcular_total()) + "\nIncluye precio SSD estimado no verificado. Refrigeración adicional no presupuestada.\n\n"
 	info += "REFRIGERACIÓN:\n" + CpuCoolingInfoScript.new().message(_equipment.get("cpu", {}))
+	var warnings = _controller._recommender.advertencias_compatibilidad(_equipment)
+	if not warnings.is_empty():
+		info += "\n\nCOMPATIBILIDAD PENDIENTE:\n" + "\n".join(warnings)
 	_dashboard.dialog_text = info
 	_dashboard.popup_centered()
 

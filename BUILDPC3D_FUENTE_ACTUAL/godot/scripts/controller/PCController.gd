@@ -6,6 +6,7 @@ signal ia_resuelta(ok: bool, mensaje: String, uso: String)
 const FilterScript = preload("res://scripts/model/UseFilter.gd")
 const RecommenderScript = preload("res://scripts/model/Recommender.gd")
 const DemandAnalyzerScript = preload("res://scripts/model/DemandAnalyzer.gd")
+const RequestValidatorScript = preload("res://scripts/model/RequestValidator.gd")
 
 const KEYWORDS = {
     "juegos": ["juego", "juegos", "jugar", "gaming", "gamer", "videojuego", "videojuegos", "valorant", "fortnite", "minecraft", "warzone", "gta", "steam", "counter strike", "fifa", "e sports", "roblox", "god of war"],
@@ -91,18 +92,23 @@ func _profile_message(profile: String) -> String:
     return "Perfil recomendado: " + str(names.get(profile, profile))
 
 func _local_fallback(reason: String) -> void:
+    var validation = validate_request(_last_text)
+    if not validation["ok"]:
+        ia_resuelta.emit(false, validation["message"], "")
+        return
     # Solo códigos internos: nunca registrar la petición, URL, cabeceras o cuerpo.
     var allowed = ["url_ausente", "url_no_permitida", "inicio_http", "respuesta_http", "json_invalido", "perfil_invalido", "health_no_disponible"]
     var safe_reason = reason if reason in allowed else "desconocido"
-    var profile = clasificar_texto_local(_last_text)
+    var profile = str(validation.get("profile", ""))
     if not profile.is_empty() and establecer_uso_manual(profile):
         _last_source = "local"
         print("BUILDPC3D IA: fuente=local; motivo=", safe_reason, "; perfil=", profile)
-        ia_resuelta.emit(true, _profile_message(profile) + " · Interpretación local (IA remota no disponible).", profile)
+        var problem = "Servidor temporalmente no disponible." if reason == "health_no_disponible" else "No se pudo completar la conexión con IA."
+        ia_resuelta.emit(true, _profile_message(profile) + " · " + problem + " Interpretación local de respaldo.", profile)
     else:
         _last_source = "ninguno"
         print("BUILDPC3D IA: fuente=ninguno; motivo=", safe_reason)
-        ia_resuelta.emit(false, "No identificamos el uso. Elige una categoría manualmente para continuar.", "")
+        ia_resuelta.emit(false, "No se pudo completar la conexión con IA. " + RequestValidatorScript.INCOMPLETE, "")
 
 func _http_result_name(result: int) -> String:
     match result:
@@ -114,22 +120,19 @@ func _http_result_name(result: int) -> String:
         HTTPRequest.RESULT_TIMEOUT: return "tiempo_agotado"
         _: return "otro_error"
 
+func validate_request(text: String) -> Dictionary:
+    return RequestValidatorScript.new().validate(text)
+
 func solicitar_uso(text_input: String, service_url: String, warm_up: bool = false) -> void:
     if _busy:
-        ia_resuelta.emit(false, "Estamos analizando tu petición. Espera un momento.", "")
         return
     _last_text = text_input.strip_edges()
-    if _last_text.is_empty():
-        ia_resuelta.emit(false, "Escribe una petición antes de interpretarla.", "")
-        return
-    if DemandAnalyzerScript.new().analyze(_last_text)["portatil"]:
-        ia_resuelta.emit(false, "BUILDPC3D configura computadores de escritorio, no portátiles.", "")
-        return
-    if _last_text.length() > 2000:
-        ia_resuelta.emit(false, "La petición supera los 2000 caracteres.", "")
-        return
     _last_source = ""
     _remote_details.clear()
+    var validation = validate_request(_last_text)
+    if not validation["ok"]:
+        ia_resuelta.emit(false, validation["message"], "")
+        return
     var url = service_url.strip_edges()
     if url.is_empty():
         _local_fallback("url_ausente")
@@ -187,6 +190,22 @@ func _on_ai_completed(result: int, code: int, _headers: PackedStringArray, body:
         _local_fallback("json_invalido")
         return
     var response = json.data
+    if typeof(response) == TYPE_DICTIONARY and response.get("uso") == "no_aplica":
+        _last_source = "rechazado"
+        _remote_details.clear()
+        ia_resuelta.emit(false, RequestValidatorScript.INVALID, "")
+        return
+    if typeof(response) == TYPE_DICTIONARY and response.get("fuente") == "local":
+        if typeof(response.get("uso")) != TYPE_STRING or _normalize_use(response["uso"]).is_empty():
+            _local_fallback("perfil_invalido")
+            return
+        var validation = validate_request(_last_text)
+        if not validation.get("ok", false) or str(validation.get("profile", "")).is_empty():
+            _last_source = "ninguno"
+            ia_resuelta.emit(false, RequestValidatorScript.INCOMPLETE, "")
+            return
+        # El respaldo del servidor antiguo no tiene las mismas reglas locales.
+        response["uso"] = validation["profile"]
     if typeof(response) != TYPE_DICTIONARY or not procesar_respuesta_ia(response):
         _local_fallback("perfil_invalido")
         return

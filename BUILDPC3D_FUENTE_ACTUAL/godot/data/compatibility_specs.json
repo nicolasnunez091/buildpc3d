@@ -1,0 +1,20 @@
+{
+  "psu": {
+    "psu_msi_mag_a650bn_650w_80_bronze": {
+      "psu_format": "ATX",
+      "psu_length_mm": 140,
+      "pcie_8pin_available": 2,
+      "source": "https://in.msi.com/Power-Supply/MAG-A650BN/Specification",
+      "note": "MAG A650BN; no extrapolar a revisiones PCIE5."
+    }
+  },
+  "case": {
+    "case_chasis_corsair_4000d_airflow_mid_tower": {
+      "psu_formats": ["ATX"],
+      "psu_max_length_mm": 220,
+      "psu_unconditional_length_mm": 180,
+      "source": "https://www.corsair.com/us/en/explorer/diy-builder/cases/corsair-4000-5000-and-7000-series-pc-cases",
+      "note": "180 mm con jaula de discos; hasta 220 mm al retirarla."
+    }
+  }
+}

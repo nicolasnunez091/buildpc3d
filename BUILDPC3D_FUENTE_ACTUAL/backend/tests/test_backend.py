@@ -75,7 +75,7 @@ class ClassifierTests(unittest.TestCase):
                 schema = payload["response_format"]["json_schema"]
                 self.assertTrue(schema["strict"])
                 self.assertEqual(schema["schema"]["required"], ["uso"])
-                self.assertEqual(schema["schema"]["properties"]["uso"]["enum"], ["juegos", "edicion", "ofimatica"])
+                self.assertEqual(schema["schema"]["properties"]["uso"]["enum"], ["juegos", "edicion", "ofimatica", "no_aplica"])
                 self.assertEqual(request.get_header("Authorization"), "Bearer FAKE_TEST_KEY")
                 self.assertEqual(request.get_header("User-agent"), "BUILDPC3D/1.0")
 

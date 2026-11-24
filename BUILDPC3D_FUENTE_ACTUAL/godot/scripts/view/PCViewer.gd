@@ -196,8 +196,20 @@ func _touch_distance() -> float:
     return points[0].distance_to(points[1])
 
 func _orbit(movement: Vector2) -> void:
-    _angle = _angle - movement.x * 0.008 if _ssd_focus else clampf(_angle - movement.x * 0.008, -0.95, 0.95)
-    _pitch = clampf(_pitch + movement.y * 0.006, -1.3 if _ssd_focus else -0.45, 1.3 if _ssd_focus else 0.52)
+    # Giro horizontal completo. Evitar los polos para que look_at no invierta
+    # la cámara ni reciba una dirección paralela al vector UP.
+    _angle = wrapf(_angle - movement.x * 0.008, -PI, PI)
+    _pitch = clampf(_pitch + movement.y * 0.006, -1.3, 1.3)
+    _update_camera()
+
+func reset_camera() -> void:
+    _angle = 0.40
+    _pitch = 0.14
+    if _ssd_focus:
+        _distance = 1.25
+    else:
+        _framed_case = ""
+        _frame_case(_equipment.get("case", {}))
     _update_camera()
 
 func _pick_at(point: Vector2) -> void:
