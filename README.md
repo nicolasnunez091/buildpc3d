@@ -1,212 +1,365 @@
 # 🖥️ BUILDPC3D — Configurador Inteligente de Computadores en 3D
 
-### Diseña, configura y explora tu computador de manera interactiva
+## 🖥️ BUILDPC3D — Configurador Inteligente de Computadores en 3D
 
-**BUILDPC3D** es un proyecto académico que busca facilitar la selección y el ensamblaje de computadores de escritorio mediante una aplicación interactiva desarrollada en **Godot Engine**.
+#### Diseña, configura y explora tu computador de manera interactiva
 
-La aplicación permite que una persona describa para qué necesita su computador, reciba una configuración recomendada, explore sus componentes en un entorno 3D y realice modificaciones teniendo en cuenta criterios de compatibilidad y costos estimados.
+**BUILDPC3D** es un proyecto académico orientado a facilitar la selección y configuración de computadores de escritorio mediante una aplicación móvil interactiva desarrollada en **Godot Engine 4.7.2**.
 
-El proyecto combina **desarrollo de software, inteligencia artificial, bases de datos en la nube y visualización tridimensional** para ofrecer una experiencia educativa y práctica.
+La aplicación permite que una persona describa para qué necesita un computador, reciba una recomendación basada en su perfil de uso, visualice el ensamblaje en un entorno tridimensional y cambie los componentes disponibles, teniendo en cuenta criterios de compatibilidad y costos estimados.
 
----
+El proyecto integra desarrollo de software, inteligencia artificial, bases de datos en la nube y visualización 3D para ofrecer una herramienta educativa que ayude a comprender el funcionamiento y la selección de los componentes de un computador.
 
-## 🎯 Objetivo del proyecto
+***
 
-Desarrollar una aplicación móvil que permita a los usuarios configurar computadores de escritorio de forma sencilla, utilizando interpretación de lenguaje natural, un catálogo de componentes y un sistema de recomendaciones.
+### 🎯 Objetivo del proyecto
 
-BUILDPC3D está pensado especialmente para personas que no tienen conocimientos avanzados de hardware y necesitan comprender cuáles componentes pueden utilizar en un computador según sus necesidades.
+#### Objetivo general
 
-## 🚀 Funcionalidades principales
+Desarrollar una aplicación móvil interactiva que permita configurar computadores de escritorio mediante inteligencia artificial, un catálogo de componentes de hardware, reglas de compatibilidad y visualización tridimensional.
 
-### 🤖 1. Interpretación de solicitudes con inteligencia artificial
+#### Objetivos específicos
 
-El usuario puede describir el computador que necesita utilizando lenguaje natural.
+* Facilitar la selección de componentes según las necesidades del usuario.
+* Interpretar solicitudes escritas en lenguaje natural utilizando inteligencia artificial.
+* Recomendar configuraciones para actividades como estudio, videojuegos, programación, diseño y creación de contenido.
+* Permitir consultar y reemplazar componentes de una configuración.
+* Comprobar criterios técnicos de compatibilidad entre las piezas.
+* Representar visualmente el computador mediante modelos 3D.
+* Calcular dinámicamente el costo estimado en pesos colombianos.
+* Integrar información de hardware almacenada en Firebase Firestore.
+* Comprobar el funcionamiento de la aplicación mediante pruebas automatizadas y pruebas en Android.
+
+***
+
+### 🚀 Funcionalidades principales
+
+#### 🤖 1. Interpretación de solicitudes mediante inteligencia artificial
+
+BUILDPC3D permite que el usuario describa qué computador necesita utilizando lenguaje natural.
 
 Por ejemplo:
 
-> Necesito un computador para estudiar programación, utilizar Android Studio y jugar ocasionalmente.
+> Mi hijo está en noveno de bachillerato y necesita un computador para realizar tareas y estudiar.
 
-La aplicación puede enviar esta solicitud a un servicio backend que utiliza **Groq** para interpretar el perfil de uso.
+O también:
 
-A partir de esa información, el sistema recomienda una configuración utilizando las reglas y los componentes disponibles en el catálogo.
+> Necesito un computador para jugar Minecraft, programar y estudiar.
 
-Si el servicio de inteligencia artificial no está disponible, la aplicación cuenta con un mecanismo local de interpretación para mantener las funciones básicas.
+La aplicación utiliza un sistema de validación de solicitudes y un servicio backend que integra **Groq** para interpretar el perfil de uso.
 
-### 🧩 2. Selección de componentes
+El sistema maneja tres perfiles principales:
 
-BUILDPC3D permite trabajar con siete categorías de hardware:
+| Perfil    | Actividades relacionadas                                           |
+| --------- | ------------------------------------------------------------------ |
+| Juegos    | Videojuegos, gaming y entretenimiento                              |
+| Edición   | Diseño, programación, creación de contenido y edición de video     |
+| Ofimática | Estudio, colegio, universidad, documentos y actividades de oficina |
 
-- Procesadores (CPU).
-- Tarjetas madre (Motherboard).
-- Memorias RAM.
-- Tarjetas gráficas (GPU).
-- Fuentes de poder (PSU).
-- Gabinetes.
-- Unidades de almacenamiento SSD.
+**Validación de solicitudes**
 
-Cada componente dispone de información que permite identificarlo, comparar alternativas y conocer su precio estimado.
+Se incorporaron mejoras para distinguir entre solicitudes válidas, inválidas e incompletas.
 
-### 🔧 3. Verificación de compatibilidad
+**Solicitud válida:**
 
-El sistema incorpora reglas que permiten evaluar distintas características de los componentes seleccionados.
+"Necesito un computador para grabar videos".
 
-Entre ellas se encuentran la compatibilidad de sockets, los tipos de memoria y ciertas restricciones de potencia y dimensiones.
+El sistema reconoce una necesidad relacionada con la creación de contenido.
 
-El objetivo es reducir las combinaciones incompatibles y ayudar al usuario a comprender la relación entre las piezas.
+**Solicitud inválida:**
 
-**Importante:** las comprobaciones son orientativas y no sustituyen la verificación de las especificaciones oficiales del fabricante.
+"Quiero comer pizza".
 
-### 🎮 4. Visualización interactiva en 3D
+El sistema debe rechazar la petición porque no corresponde a la configuración de un computador.
 
-Una de las principales características de BUILDPC3D es su visor tridimensional.
+**Solicitud incompleta:**
 
-Este permite:
+"Quiero comprar un PC".
 
-- Observar el computador ensamblado.
-- Girar la cámara alrededor del equipo.
-- Acercar y alejar la vista.
-- Inspeccionar componentes.
-- Visualizar distintas piezas del computador.
-- Explorar la ubicación de las unidades SSD SATA y NVMe.
+El sistema solicita más información sobre el uso previsto antes de generar una configuración.
 
-Los modelos 3D cumplen una función educativa y representan visualmente los componentes, sin pretender ser reproducciones exactas de todos los productos comerciales.
+Esta validación busca evitar recomendaciones generadas a partir de frases sin relación con el objetivo de la aplicación.
 
-### 💰 5. Cálculo dinámico de precios
+**Interpretación de respaldo**
 
-La aplicación muestra el precio total estimado del computador en **pesos colombianos (COP)**.
+Cuando el servicio remoto no está disponible, la aplicación dispone de un mecanismo local que puede reconocer determinadas solicitudes informáticas.
 
-Cuando el usuario cambia o retira un componente, el valor total se actualiza automáticamente.
+El respaldo local utiliza reglas y palabras relacionadas con los perfiles disponibles. No sustituye completamente las capacidades de interpretación del servicio de inteligencia artificial.
 
-Los precios son referencias utilizadas para el prototipo y pueden diferir de los precios comerciales actuales.
+El sistema también incorpora manejo de solicitudes incorrectas, respuestas inesperadas y errores de conexión.
 
-### 🔄 6. Personalización del computador
+***
 
-El usuario puede modificar su configuración inicial seleccionando otras piezas disponibles.
+#### 🧩 2. Catálogo de componentes
 
-El sistema permite revisar alternativas y actualizar la configuración, manteniendo las validaciones de compatibilidad implementadas.
+La versión actual de BUILDPC3D dispone de **52 componentes**, distribuidos en siete categorías.
 
----
+| Categoría                    | Cantidad |
+| ---------------------------- | -------- |
+| Procesadores (CPU)           | 8        |
+| Tarjetas madre (Motherboard) | 8        |
+| Memorias RAM                 | 8        |
+| Tarjetas gráficas (GPU)      | 8        |
+| Fuentes de poder (PSU)       | 5        |
+| Gabinetes o chasis           | 5        |
+| Unidades SSD                 | 10       |
+| **Total**                    | **52**   |
 
-## 📱 Estado actual del proyecto
+El catálogo está conformado por 42 componentes base y diez unidades SSD incorporadas mediante una extensión local.
 
-BUILDPC3D cuenta con una versión APK que ha sido instalada y probada en un dispositivo Android.
+Los componentes incluyen información como nombre, referencia, características y precio estimado.
 
-| Característica | APK estable |
-|---|---|
-| Plataforma | Android |
-| Motor de desarrollo | Godot 4 |
-| Componentes disponibles | 46 |
-| Categorías | 7 |
-| Almacenamiento SSD | 4 unidades |
-| Visualización 3D | Implementada |
-| Selección y cambio de componentes | Implementados |
-| Precios estimados en COP | Implementados |
-| Interpretación con Groq | Integrada mediante backend |
-| Respaldo local de interpretación | Implementado |
+Las unidades de almacenamiento contemplan modelos SATA y NVMe, que también pueden representarse en el visor tridimensional.
 
-### Diferencia entre la APK y el código fuente
+***
 
-Es importante distinguir las dos versiones del proyecto.
+#### 🔧 3. Comprobación de compatibilidad de hardware
 
-**Versión estable para demostraciones**
+BUILDPC3D incorpora reglas que permiten evaluar determinadas características de los componentes seleccionados.
 
-La APK probada en Android contiene 46 componentes, incluyendo cuatro unidades SSD. Esta es la versión utilizada como referencia para las demostraciones del proyecto.
+Entre las comprobaciones implementadas se encuentran:
 
-**Versión de desarrollo del repositorio**
+* Compatibilidad entre sockets de procesadores y placas madre.
+* Tipos de memoria RAM admitidos.
+* Restricciones conocidas de potencia.
+* Determinadas dimensiones y restricciones físicas.
+* Conectores de alimentación de GPU cuando existen datos suficientes.
+* Formato y espacio de montaje entre fuentes de poder y gabinetes.
+* Advertencias relacionadas con información no verificada de BIOS y revisiones de placa madre.
 
-El código fuente más reciente incorpora 42 componentes base y 10 unidades SSD locales, para un total de 52 registros de hardware.
+**Estados de compatibilidad**
 
-Esta versión contiene modificaciones posteriores a la APK estable que todavía requieren compilación y validación en un dispositivo Android.
+La aplicación diferencia tres situaciones:
 
-Las ampliaciones propuestas hacia 70 o 100 componentes siguen siendo trabajo pendiente y no deben confundirse con funcionalidades terminadas.
+**Compatible:** los criterios técnicos evaluados coinciden.
 
----
+**Incompatible:** existe una restricción conocida que impide utilizar la combinación.
 
-## 🛠️ Tecnologías utilizadas
+**Pendiente de verificar:** faltan datos suficientes para confirmar algunos aspectos técnicos.
 
-| Tecnología | Utilización |
-|---|---|
-| Godot Engine 4.7.2 | Desarrollo de la aplicación y visualización 3D |
-| GDScript | Programación de interfaces, lógica y funcionalidades |
-| Python | Desarrollo de servicios backend |
-| Firebase Firestore | Almacenamiento del catálogo de componentes |
-| Groq | Interpretación de solicitudes mediante modelos de lenguaje |
-| Render | Alojamiento del servicio backend remoto |
-| Git y GitHub | Control de versiones y almacenamiento del código |
-| JSON | Configuración, intercambio y almacenamiento local de datos |
+Cuando una combinación requiere verificaciones adicionales, la aplicación presenta advertencias al usuario.
 
-## 🏗️ Arquitectura del sistema
+El sistema busca evitar combinaciones con incompatibilidades conocidas y conservar un estado coherente cuando se rechaza el reemplazo de una pieza.
 
-BUILDPC3D utiliza una organización modular basada en los patrones **MVC (Modelo-Vista-Controlador)** y **DAO (Objeto de Acceso a Datos)**.
+**Importante:** las comprobaciones son orientativas. No garantizan la compatibilidad comercial completa de todos los productos ni reemplazan la consulta de especificaciones oficiales del fabricante.
 
-### Modelo
+***
 
-Contiene las estructuras y reglas relacionadas con los componentes del computador, las recomendaciones y la compatibilidad.
+#### 🎮 4. Visualización interactiva en 3D
 
-### Vista
+Una de las funciones principales de BUILDPC3D es su visor tridimensional, que permite explorar visualmente el ensamblaje de un computador.
 
-Se encarga de mostrar las pantallas de la aplicación, los componentes disponibles y la visualización tridimensional.
+El usuario puede:
 
-### Controlador
+* Observar la configuración del equipo en 3D.
+* Girar la cámara alrededor del computador.
+* Acercar y alejar la visualización.
+* Restablecer la posición de la cámara.
+* Observar representaciones de diferentes componentes.
+* Cambiar piezas y visualizar las modificaciones correspondientes.
+* Explorar la ubicación de unidades SSD SATA y NVMe.
 
-Gestiona las interacciones del usuario y coordina las operaciones entre la vista, el modelo y los servicios.
+El visor incorpora modelos 3D, materiales, texturas e iluminación para ofrecer una representación educativa del hardware.
 
-### DAO
+Los modelos representan las características visuales de las piezas, pero no necesariamente reproducen con exactitud todas las dimensiones o acabados de los productos comerciales.
 
-Administra el acceso al catálogo de hardware, incluyendo los datos locales y los registros obtenidos desde Firebase Firestore.
+***
 
-### Servicio de inteligencia artificial
+#### 💰 5. Cálculo dinámico de precios
 
-Es un backend desarrollado en Python que recibe las solicitudes de los usuarios y utiliza Groq para interpretar el tipo de computador requerido.
+BUILDPC3D calcula el valor estimado del computador utilizando los precios de los componentes seleccionados.
 
-La aplicación aplica posteriormente su propia lógica de recomendación y compatibilidad.
+Los valores se presentan en **pesos colombianos (COP)**.
 
----
+Cuando se reemplaza un componente, la aplicación actualiza el total de acuerdo con la nueva selección.
 
-## ☁️ Integración con Firebase
+También se incorporaron validaciones para evitar que valores negativos o incorrectos alteren el cálculo.
 
-BUILDPC3D utiliza **Google Firebase Firestore** para almacenar y consultar información del catálogo base.
+Los precios utilizados son referencias del prototipo académico y pueden diferir de los valores actuales del mercado.
 
-El catálogo remoto contiene 42 componentes organizados en seis categorías originales.
+***
 
-Las unidades SSD añadidas posteriormente se gestionan mediante una extensión local del proyecto.
+#### 🔄 6. Personalización del computador
 
-Esta arquitectura permite separar la información de hardware de parte de la lógica de la aplicación y conservar datos locales de respaldo cuando no sea posible acceder al servicio remoto.
+Después de generar una configuración, el usuario puede consultar alternativas y reemplazar componentes.
 
----
+El sistema permite:
 
-## 🧠 Integración con Groq y Render
+* Revisar las piezas seleccionadas.
+* Consultar alternativas disponibles.
+* Comparar referencias y precios.
+* Reemplazar componentes.
+* Actualizar el costo total.
+* Revisar advertencias de compatibilidad.
+* Observar los cambios correspondientes en el visor 3D.
 
-Para incorporar inteligencia artificial, BUILDPC3D utiliza un backend Python desplegado en Render.
+Las alternativas se evalúan mediante las reglas técnicas implementadas.
 
-El funcionamiento general es el siguiente:
+Cuando una combinación presenta una incompatibilidad conocida, el sistema debe impedir que se aplique como una selección válida.
 
-1. El usuario escribe una solicitud en la aplicación.
-2. Godot envía el texto al servicio backend.
-3. El backend procesa la solicitud utilizando Groq.
-4. El servicio devuelve una interpretación del perfil de uso.
-5. La aplicación utiliza esa información para generar una configuración con los componentes disponibles.
-6. El usuario puede consultar y modificar la recomendación desde la interfaz.
+***
 
-**Backend desplegado:**
+### 📱 Estado actual del proyecto
 
-https://buildpc3d-backend.onrender.com
+BUILDPC3D cuenta con una versión Android que incorpora las mejoras recientes del sistema de interpretación, el catálogo ampliado y las validaciones orientativas de compatibilidad.
 
-**Repositorio del backend remoto:**
+#### Características de la versión actual
 
-https://github.com/nicolasnunez091/buildpc3d-backend
+| Característica                                | Estado             |
+| --------------------------------------------- | ------------------ |
+| Plataforma                                    | Android            |
+| Motor                                         | Godot Engine 4.7.2 |
+| Lenguaje principal                            | GDScript           |
+| Componentes de hardware                       | 52                 |
+| Categorías                                    | 7                  |
+| Unidades SSD                                  | 10                 |
+| Interpretación mediante IA                    | Implementada       |
+| Respaldo local de interpretación              | Implementado       |
+| Validación de solicitudes                     | Implementada       |
+| Comprobaciones orientativas de compatibilidad | Implementadas      |
+| Visualización interactiva en 3D               | Implementada       |
+| Reemplazo de componentes                      | Implementado       |
+| Cálculo de precios en COP                     | Implementado       |
+| Integración con Firebase                      | Implementada       |
+| Backend Python en Render                      | Desplegado         |
 
-El backend se administra de manera independiente del repositorio principal. Las claves privadas de Groq y las credenciales administrativas no se incluyen en el código público.
+#### Evolución del proyecto
 
-El alojamiento gratuito de Render puede tardar en activarse después de un periodo de inactividad.
+En una etapa anterior se generó una APK con 46 componentes, incluyendo cuatro unidades SSD.
 
----
+Posteriormente se amplió el catálogo hasta alcanzar 52 componentes y se realizaron mejoras en la inteligencia artificial, los controles de la interfaz y la comprobación de compatibilidad.
 
-## 📂 Estructura del repositorio
+La versión posterior fue exportada como APK Debug, instalada en BlueStacks y probada manualmente en un dispositivo Android.
 
-El proyecto conserva una estructura anterior y una carpeta con el código fuente de desarrollo más reciente.
+Durante la prueba manual se comprobaron las funcionalidades principales, incluidos el catálogo, la interpretación de solicitudes y la visualización tridimensional.
 
-```text
+Aunque los resultados fueron satisfactorios en las funciones revisadas, todavía pueden existir diferencias de funcionamiento entre dispositivos Android.
+
+***
+
+### 🛠️ Tecnologías utilizadas
+
+| Tecnología         | Función dentro del proyecto                                   |
+| ------------------ | ------------------------------------------------------------- |
+| Godot Engine 4.7.2 | Desarrollo de la aplicación móvil y visualización 3D          |
+| GDScript           | Lógica de aplicación, interfaz y componentes                  |
+| Python             | Desarrollo del backend de interpretación                      |
+| Groq               | Procesamiento de solicitudes mediante inteligencia artificial |
+| Firebase Firestore | Almacenamiento del catálogo base                              |
+| Render             | Alojamiento del backend remoto                                |
+| JSON               | Configuración y almacenamiento de datos locales               |
+| Git                | Control de versiones                                          |
+| GitHub             | Repositorios del código fuente                                |
+| GitBook            | Documentación técnica pública                                 |
+| Android SDK        | Herramientas de compilación y depuración                      |
+| BlueStacks         | Pruebas de funcionamiento en un entorno Android               |
+| ADB                | Instalación, depuración y ejecución de pruebas Android        |
+
+***
+
+### 🏗️ Arquitectura del sistema
+
+BUILDPC3D utiliza una arquitectura modular basada principalmente en **MVC (Modelo-Vista-Controlador)** y **DAO (Objeto de Acceso a Datos)**.
+
+#### Modelo
+
+Contiene las estructuras y reglas relacionadas con:
+
+* Componentes de hardware.
+* Perfiles de uso.
+* Generación de recomendaciones.
+* Reglas de compatibilidad.
+* Cálculo de configuraciones.
+
+Entre los archivos relacionados con esta capa se encuentran `Recommender.gd`, `CatalogDAO.gd` y `RequestValidator.gd`.
+
+#### Vista
+
+Se encarga de presentar las pantallas, controles, alternativas y representaciones tridimensionales.
+
+Incluye la interfaz principal y los elementos visuales del computador.
+
+Entre los archivos relacionados se encuentran `Main.gd`, `PCViewer.gd` y `DragScroll.gd`.
+
+#### Controlador
+
+Coordina las acciones del usuario con el modelo y los servicios externos.
+
+Gestiona operaciones como interpretar solicitudes, generar recomendaciones y reemplazar componentes.
+
+Uno de los archivos principales es `PCController.gd`.
+
+#### DAO
+
+El patrón DAO permite organizar el acceso a los datos del catálogo.
+
+El componente `CatalogDAO.gd` gestiona información local y la integración con los registros de Firebase Firestore.
+
+#### Servicio de inteligencia artificial
+
+El backend está desarrollado en Python y recibe las solicitudes enviadas por la aplicación.
+
+El servicio puede utilizar Groq para interpretar el perfil requerido y devolver una respuesta estructurada que Godot procesa mediante su propia lógica.
+
+***
+
+### ☁️ Integración con Firebase Firestore
+
+BUILDPC3D utiliza **Firebase Firestore** para almacenar el catálogo base de hardware.
+
+El catálogo original contiene 42 registros distribuidos en seis categorías.
+
+Posteriormente se añadieron diez unidades SSD mediante una extensión local.
+
+#### Funcionamiento general
+
+1. La aplicación inicia y consulta la información del catálogo.
+2. Se utilizan los registros disponibles de Firebase y los datos locales correspondientes.
+3. Los componentes se organizan por categoría.
+4. El recomendador utiliza los registros para construir configuraciones.
+5. El usuario puede consultar y cambiar las piezas desde la interfaz.
+
+La aplicación incorpora mecanismos de respaldo local para conservar funciones básicas cuando no es posible obtener determinados datos remotos.
+
+***
+
+### 🧠 Integración de Groq y Render
+
+La inteligencia artificial de BUILDPC3D se comunica con un servicio backend desarrollado en Python.
+
+El backend se encuentra alojado en Render y se administra mediante un repositorio independiente.
+
+#### Flujo de interpretación
+
+1. El usuario escribe una solicitud.
+2. La aplicación verifica la información ingresada.
+3. Las solicitudes que requieren interpretación remota se envían mediante HTTP al backend.
+4. El backend procesa la petición utilizando Groq cuando el servicio está disponible.
+5. Se devuelve una interpretación del perfil de uso.
+6. Godot utiliza el perfil válido para generar una configuración.
+7. La aplicación presenta los componentes recomendados y su costo.
+
+#### Backend desplegado
+
+[https://buildpc3d-backend.onrender.com](https://buildpc3d-backend.onrender.com)
+
+#### Repositorio del backend
+
+[https://github.com/nicolasnunez091/buildpc3d-backend](https://github.com/nicolasnunez091/buildpc3d-backend)
+
+El backend remoto se administra por separado del código principal de Godot. Las modificaciones realizadas localmente en el backend no se consideran desplegadas automáticamente.
+
+Las credenciales privadas utilizadas para conectar servicios no deben publicarse en los repositorios.
+
+El servicio alojado en Render puede presentar demoras de activación después de permanecer inactivo.
+
+***
+
+### 📂 Estructura del repositorio
+
+El repositorio principal conserva una estructura de desarrollo anterior y una carpeta que contiene el código fuente más reciente.
+
+```
 buildpc3d/
 │
 ├── BUILDPC3D_FUENTE_ACTUAL/
@@ -216,6 +369,9 @@ buildpc3d/
 │   │   ├── data/
 │   │   ├── scenes/
 │   │   ├── scripts/
+│   │   │   ├── controller/
+│   │   │   ├── model/
+│   │   │   └── view/
 │   │   ├── tests/
 │   │   └── project.godot
 │   │
@@ -233,144 +389,283 @@ buildpc3d/
 └── .gitignore
 ```
 
-### Ubicación del proyecto principal
+#### Código fuente principal
 
-El código de desarrollo más reciente se encuentra en:
+El proyecto Godot más reciente se encuentra en:
 
 `BUILDPC3D_FUENTE_ACTUAL/godot/`
 
-Las carpetas `buildpc3d-app` e `ia-microservice` corresponden a estructuras anteriores que se conservaron como referencia del desarrollo.
+Las carpetas `buildpc3d-app` e `ia-microservice` corresponden a estructuras anteriores conservadas como referencia del proceso de desarrollo.
 
----
+***
 
-## 💻 Cómo ejecutar el proyecto
+### 💻 Instalación y ejecución del proyecto
 
-### Requisitos
+#### Requisitos
 
-- Godot Engine 4.7.2.
-- Git para clonar el repositorio.
-- Un computador compatible con Godot 4.
-- Python para ejecutar los servicios locales y algunas herramientas complementarias.
-- Conexión a Internet para utilizar los servicios remotos.
+* Godot Engine 4.7.2.
+* Git.
+* Un computador compatible con Godot 4.
+* Herramientas de exportación Android para generar la APK.
+* Android SDK y Java configurados para exportación.
+* Conexión a Internet para las funcionalidades remotas.
 
-### Paso 1. Clonar el repositorio
+#### Paso 1. Clonar el repositorio
 
-Abre una terminal y ejecuta:
+Desde una terminal:
 
-```bash
+```
 git clone https://github.com/nicolasnunez091/buildpc3d.git
 ```
 
-### Paso 2. Abrir Godot
+#### Paso 2. Abrir Godot
 
-Inicia Godot Engine y selecciona la opción **Importar proyecto**.
+Iniciar Godot Engine y seleccionar **Importar proyecto**.
 
-Busca el archivo:
+Buscar:
 
-```text
+```
 buildpc3d/BUILDPC3D_FUENTE_ACTUAL/godot/project.godot
 ```
 
-### Paso 3. Importar los recursos
+#### Paso 3. Importar los recursos
 
-Permite que Godot termine de importar los modelos 3D, las texturas y los demás recursos.
+Permitir que Godot importe los modelos tridimensionales, texturas y demás archivos del proyecto.
 
-### Paso 4. Ejecutar la aplicación
+#### Paso 4. Ejecutar
 
-Abre la escena principal:
+Abrir la escena principal:
 
-```text
-res://scenes/Main.tscn
-```
+`res://scenes/Main.tscn`
 
-Presiona **F5** para ejecutar el proyecto desde el editor.
+Presionar **F5** para ejecutar desde el editor.
 
-**Nota:** estas instrucciones permiten abrir el código fuente actual. Algunas funcionalidades pueden requerir configuración adicional o pruebas, ya que esta versión contiene cambios posteriores a la APK estable.
+#### Paso 5. Exportación Android
 
-### Ejecución en Android
+Para generar una APK es necesario configurar las herramientas Android, disponer de una plantilla de exportación compatible y utilizar un perfil de exportación de Godot.
 
-Para generar una APK se necesitan las herramientas de exportación de Android, el SDK correspondiente y la configuración de exportación de Godot.
+La aplicación se ha exportado en formato APK Debug para realizar comprobaciones en Android.
 
-El APK de demostración probado se conserva por separado y no está publicado actualmente en la sección Releases de este repositorio.
+***
 
----
+### 🧪 Pruebas y validaciones
 
-## 🧪 Pruebas y validaciones
+Durante el desarrollo se realizaron pruebas orientadas a detectar errores en las funcionalidades principales.
 
-Durante el desarrollo se han realizado verificaciones sobre diferentes partes del sistema, entre ellas:
+#### 1. Pruebas de interpretación
 
-- Carga y lectura del catálogo.
-- Reglas de compatibilidad.
-- Generación de recomendaciones.
-- Integración con servicios de interpretación.
-- Visualización de componentes en 3D.
-- Selección y reemplazo de piezas.
-- Interacción de la interfaz.
-- Funcionamiento de la APK estable en un dispositivo Android.
+Se ejecutaron **62 casos de interpretación**, que incluyeron:
 
-El proyecto incluye carpetas de pruebas automatizadas y documentación técnica.
+* Solicitudes de estudio.
+* Solicitudes relacionadas con videojuegos.
+* Programación y creación de contenido.
+* Peticiones incompletas.
+* Solicitudes absurdas.
+* Textos incorrectos.
+* Negaciones.
+* Entradas vacías.
+* Frases con caracteres especiales.
 
-No todas las modificaciones recientes del código fuente han sido comprobadas en Android. Las pruebas de la APK estable no deben interpretarse como una validación de los cambios posteriores.
+Los 62 casos reportados finalizaron satisfactoriamente en las pruebas automatizadas.
 
----
+#### 2. Pruebas del backend
 
-## ⚠️ Limitaciones y mejoras futuras
+Se ejecutaron **32 pruebas automatizadas** utilizando proveedores y respuestas simuladas.
 
-BUILDPC3D es un prototipo académico en desarrollo, por lo que todavía existen oportunidades de mejora.
+Estas incluyeron comprobaciones sobre respuestas HTTP, errores de conexión, estructuras de respuesta y tratamiento de solicitudes.
 
-Entre las principales se encuentran:
+Las simulaciones permiten comprobar el manejo de errores sin consumir innecesariamente recursos del servicio remoto.
 
-- Ampliar el catálogo con más componentes verificados.
-- Incorporar sistemas de refrigeración como categoría independiente.
-- Mejorar las reglas de compatibilidad física y eléctrica.
-- Optimizar el rendimiento del visor 3D en dispositivos móviles.
-- Actualizar los precios con información comercial más reciente.
-- Mejorar la precisión de las recomendaciones según programas y videojuegos.
-- Continuar realizando pruebas sobre diferentes dispositivos Android.
-- Validar y publicar nuevas versiones instalables.
+#### 3. Pruebas generales de Godot
 
-La finalidad del proyecto es ofrecer una herramienta educativa de apoyo a la configuración de computadores, no reemplazar las verificaciones técnicas necesarias antes de comprar o ensamblar equipos reales.
+Se reportaron **69 comprobaciones generales** ejecutadas satisfactoriamente.
 
----
+Estas incluyeron funciones relacionadas con catálogo, recomendaciones, componentes y comportamiento de la aplicación.
 
-## 🎨 Modelos 3D y recursos
+#### 4. Auditoría de estrés funcional
 
-BUILDPC3D incluye modelos tridimensionales de referencia y algunos recursos externos documentados dentro del proyecto.
+Se realizó una auditoría de diferentes escenarios de uso.
 
-Los modelos comerciales utilizados como referencia no necesariamente representan las dimensiones o características exactas de los productos reales.
+Entre las operaciones verificadas se encontraron:
 
-La información sobre procedencia, licencias y limitaciones de los recursos se encuentra en:
+* Navegación repetitiva.
+* Generación de configuraciones.
+* Reemplazo de componentes.
+* Cambios de unidades SSD.
+* Interacciones de cámara.
+* Operaciones de zoom.
+* Validaciones de precios.
+* Respuestas incorrectas y errores simulados.
 
-- `BUILDPC3D_FUENTE_ACTUAL/docs/GLB_Y_LICENCIAS.md`
-- `BUILDPC3D_FUENTE_ACTUAL/docs/VISOR_3D_REALISMO.md`
+La auditoría inicial permitió detectar deficiencias en determinadas reglas de compatibilidad.
 
-Los recursos externos deben utilizarse y redistribuirse de acuerdo con sus respectivas licencias.
+Posteriormente se incorporaron comprobaciones adicionales y pruebas de regresión.
 
----
+#### 5. Pruebas de compatibilidad
 
-## 👨‍💻 Equipo de desarrollo
+Se añadieron escenarios para comprobar:
+
+* Componentes compatibles.
+* Componentes incompatibles.
+* Datos técnicos pendientes.
+* Rechazo de reemplazos incompatibles.
+* Conservación del precio después de una selección rechazada.
+* Conservación del estado del visor.
+* Manejo de configuraciones sin alternativas compatibles.
+
+Estas pruebas utilizan tanto datos del catálogo como casos sintéticos preparados para comprobar situaciones específicas.
+
+No equivalen a una certificación física de todos los componentes comerciales.
+
+#### 6. Pruebas en BlueStacks
+
+La APK fue instalada y ejecutada en BlueStacks, utilizando un entorno Android 9.
+
+Se comprobaron distintas interacciones, entre ellas:
+
+* Apertura de la aplicación.
+* Visualización del catálogo.
+* Generación de configuraciones.
+* Navegación.
+* Consulta de alternativas.
+* Cambios de algunos componentes.
+* Actualización de nombres y precios.
+* Visualización del computador 3D.
+* Giro y restablecimiento de cámara.
+
+Las verificaciones automatizadas y las observaciones del emulador permitieron revisar aspectos del funcionamiento Android.
+
+#### 7. Pruebas en dispositivo Android
+
+La versión más reciente también fue instalada y probada manualmente en un celular Android.
+
+Durante esa revisión se comprobó el funcionamiento general, la inteligencia artificial, la disponibilidad de los componentes y la representación tridimensional.
+
+No se reportaron problemas evidentes en las funcionalidades revisadas.
+
+Estas observaciones corresponden a las pruebas realizadas y no garantizan que el programa esté libre de errores en todos los dispositivos.
+
+***
+
+### ⚠️ Limitaciones conocidas
+
+BUILDPC3D es un prototipo académico y tiene limitaciones que deben considerarse.
+
+#### Compatibilidad técnica
+
+No se dispone de toda la información necesaria para garantizar:
+
+* La versión de BIOS instalada en cada placa madre.
+* El soporte oficial de todas las combinaciones de CPU y motherboard.
+* Los conectores exactos de todas las variantes comerciales de GPU.
+* Los adaptadores o cables requeridos por determinadas tarjetas gráficas.
+* La compatibilidad física completa entre todos los componentes.
+* El comportamiento real de potencia ante todas las condiciones de carga.
+
+Por lo anterior, el sistema utiliza advertencias cuando una compatibilidad queda pendiente de verificar.
+
+#### Precios
+
+Los precios son estimados y no corresponden necesariamente a cotizaciones comerciales actualizadas.
+
+#### Inteligencia artificial
+
+La interpretación depende de los servicios disponibles y de las reglas locales implementadas.
+
+El sistema puede encontrar solicitudes ambiguas o formulaciones que requieran información adicional.
+
+#### Visualización 3D
+
+Los modelos representan de manera educativa las piezas del computador.
+
+No constituyen planos físicos exactos ni sustituyen especificaciones de fabricación.
+
+#### Rendimiento
+
+El desempeño puede variar según el procesador, la memoria, el sistema operativo y la GPU del dispositivo Android.
+
+***
+
+### 🔮 Posibles mejoras futuras
+
+Entre las mejoras propuestas se encuentran:
+
+* Ampliar el catálogo con referencias adicionales verificadas.
+* Incorporar refrigeración como categoría independiente.
+* Añadir más metadatos oficiales para comprobar compatibilidad.
+* Mejorar las validaciones de BIOS, conectores y montaje.
+* Incorporar actualizaciones de precios.
+* Optimizar el rendimiento en dispositivos móviles.
+* Continuar mejorando la interpretación de solicitudes.
+* Ampliar la cobertura de pruebas en distintos equipos Android.
+* Desarrollar nuevas funciones de personalización.
+
+Estas mejoras forman parte de posibles etapas posteriores y no deben confundirse con funcionalidades ya terminadas.
+
+***
+
+### 🎨 Modelos 3D y recursos
+
+BUILDPC3D integra modelos tridimensionales utilizados como representaciones educativas de componentes de hardware.
+
+Los recursos se emplean para visualizar distintas piezas y sus posiciones dentro del ensamblaje.
+
+La procedencia, condiciones de uso y limitaciones de los recursos externos están documentadas en archivos del repositorio:
+
+* `BUILDPC3D_FUENTE_ACTUAL/docs/GLB_Y_LICENCIAS.md`
+* `BUILDPC3D_FUENTE_ACTUAL/docs/VISOR_3D_REALISMO.md`
+
+Los modelos y texturas de terceros deben utilizarse y redistribuirse respetando sus licencias correspondientes.
+
+***
+
+### 🔗 Repositorios y documentación
+
+#### Repositorio principal de BUILDPC3D
+
+[https://github.com/nicolasnunez091/buildpc3d](https://github.com/nicolasnunez091/buildpc3d)
+
+Contiene el código fuente de la aplicación, modelos, lógica de recomendaciones y pruebas.
+
+#### Repositorio del backend
+
+[https://github.com/nicolasnunez091/buildpc3d-backend](https://github.com/nicolasnunez091/buildpc3d-backend)
+
+Contiene el servicio Python utilizado para la interpretación remota.
+
+#### Documentación pública
+
+[https://nico0910.gitbook.io/buildpc3d](https://nico0910.gitbook.io/buildpc3d)
+
+Contiene la información general y técnica del proyecto.
+
+***
+
+### 👨‍💻 Equipo de desarrollo
 
 Proyecto académico desarrollado con participación de:
 
-| Integrante | Rol |
-|---|---|
-| Juan José Hernández | Desarrollador principal |
-| Nicolás Núñez | Arquitectura de datos y diseño UX/UI |
-| Juan Lozano | Analista |
-| Samuel García | Pruebas y control de calidad |
+| Integrante          | Rol                                  |
+| ------------------- | ------------------------------------ |
+| Juan José Hernández | Desarrollador principal              |
+| Nicolás Núñez       | Arquitectura de datos y diseño UX/UI |
+| Juan Lozano         | Analista                             |
+| Samuel García       | Pruebas y control de calidad         |
 
----
+***
 
-## 🎓 Propósito académico
+### 🎓 Propósito académico
 
-BUILDPC3D integra conocimientos de programación, arquitectura de software, bases de datos, inteligencia artificial, desarrollo de aplicaciones y diseño de experiencias interactivas.
+BUILDPC3D integra conocimientos de programación, arquitectura de software, inteligencia artificial, bases de datos, desarrollo móvil y diseño de experiencias tridimensionales.
 
-A través del proyecto se busca aplicar estos conocimientos a una problemática real: la dificultad que enfrentan muchas personas al momento de seleccionar componentes compatibles para construir su propio computador.
+El proyecto responde a la necesidad de facilitar la comprensión de los componentes que forman parte de un computador y de apoyar la selección de configuraciones según diferentes necesidades.
 
-El resultado es un prototipo que permite aprender sobre hardware de forma visual, explorar alternativas y comprender mejor el proceso de configuración de una computadora.
+La aplicación permite conocer piezas, comparar alternativas, consultar precios estimados y explorar un computador mediante una representación tridimensional interactiva.
 
----
+De esta manera, BUILDPC3D reúne conocimientos técnicos y una experiencia visual accesible para apoyar el aprendizaje sobre hardware.
+
+***
 
 **BUILDPC3D — Construye, explora y aprende.**
 
-*Proyecto académico en desarrollo — Noviembre de 2026.*
+_Proyecto académico — Universidad Santiago de Cali — Noviembre de 2026._

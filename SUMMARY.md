@@ -1,0 +1,18 @@
+# Table of contents
+
+* [🖥️ BUILDPC3D — Configurador Inteligente de Computadores en 3D](README.md)
+* [BUILDPC3D — Entrega integral v4 (Godot 4.x)](BUILDPC3D_FUENTE_ACTUAL/README.md)
+  * [docs](buildpc3d_fuente_actual/docs/README.md)
+    * [Ampliación del catálogo: trabajo en curso](BUILDPC3D_FUENTE_ACTUAL/docs/AMPLIACION_100_TRABAJO_EN_CURSO.md)
+    * [Android y backend de producción](BUILDPC3D_FUENTE_ACTUAL/docs/ANDROID_PRODUCCION.md)
+    * [Backend público sin inicio de sesión: Ubuntu](BUILDPC3D_FUENTE_ACTUAL/docs/DESPLIEGUE_UBUNTU.md)
+    * [Diagnóstico OpenGL al cerrar pruebas](BUILDPC3D_FUENTE_ACTUAL/docs/DIAGNOSTICO_OPENGL_CIERRE.md)
+    * [Estado de desarrollo — BUILDPC3D](BUILDPC3D_FUENTE_ACTUAL/docs/ESTADO_DESARROLLO.md)
+    * [Modelos GLB en BUILDPC3D](BUILDPC3D_FUENTE_ACTUAL/docs/GLB_Y_LICENCIAS.md)
+    * [Modelos 3D: búsqueda y atribución (MVP)](BUILDPC3D_FUENTE_ACTUAL/docs/MODELOS_SKETCHFAB.md)
+    * [Plan propuesto: carga inicial Firestore](BUILDPC3D_FUENTE_ACTUAL/docs/PLAN_CARGA_FIRESTORE.md)
+    * [Precios y limitaciones de compatibilidad del MVP](BUILDPC3D_FUENTE_ACTUAL/docs/PRECIOS_Y_LIMITACIONES.md)
+    * [Plan de pruebas — BUILDPC3D](BUILDPC3D_FUENTE_ACTUAL/docs/PRUEBAS.md)
+    * [Trazabilidad y alcance de BUILDPC3D](BUILDPC3D_FUENTE_ACTUAL/docs/REQUISITOS.md)
+    * [Verificación de BUILDPC3D — revisión 16/11/2026](BUILDPC3D_FUENTE_ACTUAL/docs/RESULTADOS_DE_PRUEBAS.md)
+    * [Visor 3D: modelos y revisión visual](BUILDPC3D_FUENTE_ACTUAL/docs/VISOR_3D_REALISMO.md)
